@@ -73,7 +73,7 @@ header{
             p{
                 font-family: "Roboto", sans-serif;
                 font-size: 2rem;
-                color: white;
+                color: ab.$gray_2;
                 font-style: italic;
                 font-weight: 700;
                 text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
@@ -469,7 +469,7 @@ footer{
 
     div.hero_footer{
         position: absolute;
-        top: 4871px;
+        top: 4960px;
         left: 260px;
 
         display: grid;
@@ -487,6 +487,7 @@ footer{
             font-style: italic;
             font-weight: 600;
             background-color: #4D4D4D;
+            opacity:  0.8;
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
            
@@ -496,6 +497,7 @@ footer{
             background-color:#4D4D4D;
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
+            opacity: 0.8;
             
             div{
                 display: flex;
@@ -539,41 +541,110 @@ footer{
        
     }
 
-    div.derechos{
-        padding: 3rem;
-        text-align: center;
+    div.derechos_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
         
-        p.parrafo_redes{
-            color: ab.$orange;
-        }
+        padding: 3rem;
 
-        div.rrss{
-            padding: 2rem;
+        div.derechos{
             display: flex;
-            gap: 6rem;
-            justify-self: center;
-            i{
-                font-size: 2rem;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;         
+           
+                
+                img{
+                    max-width: 30%;
+                    border-radius: 80px;
+                    position: relative;
+                    left: 212px;
+                    
+                    
+                }
+            
+
+            div.rrss{
+                padding: 2rem 0;
+                display: flex;
+                gap: 3rem;
+                
+                i{
+                    font-size: 2rem;
+                    color: ab.$gray;
+                    &:hover{
+                        color: ab.$orange;
+                    }
+                }
+            }
+
+            p.copyright{
                 color: ab.$gray;
-                &:hover{
+                font-size: 0.75rem;
+                span{
                     color: ab.$orange;
                 }
             }
         }
 
-        p.copyright{
-            color: ab.$gray;
+         div.derechos_servicios{
+            display: flex;
+            flex-direction: column;
+            h4{
+                font-family: "Roboto", sans-serif;
+                font-size: 1rem;
+                color: ab.$orange;
+            }
+
+            p a{
+                font-family: "Assistant", sans-serif;
+                font-size: 0.87rem;
+                color: ab.$gray;
+                text-decoration: none;
+                &:hover{
+                    text-decoration:underline;
+                    text-decoration-color: ab.$orange;
+                }
+            }
         }
 
-        p.diseño{
+        div.direcciones{
+            
+            h4{
+                margin-bottom: 1rem;
+                color: ab.$orange;
+                font-family: "Roboto", sans-serif;
+                font-size: 1rem;
+            }
+            div.direcciones_container{
+                display: flex;
+                gap: 2rem;
+                div.dir{
+                    max-width: 100%;
+                    p{  font-size: 0.87rem;
+                        font-family: "Assistant", sans-serif;
+                        color: ab.$gray;
+                        strong{
+                            color: ab.$orange
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    p.diseño{
             color: #666666;
+            text-align: center;
+            padding: 0.5rem;
             span{
                 background: linear-gradient(65deg,rgba(246, 128, 25, 1) 0%, rgba(242, 242, 242, 0.78) 72%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-weight: 700;
+                
             }
         }
-    }
-    
+     
 }
