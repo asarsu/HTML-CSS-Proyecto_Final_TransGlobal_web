@@ -66,14 +66,10 @@ main.nosotros_main{
             gap: 1rem;
             text-align: justify;
             
-           
-           
-            
-
             h1{
                 font-family: "Poppins", sans-serif;
                 color: ab.$orange;
-                font-size: 3rem;
+                font-size: 1.5rem;
                 text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
             }
 
@@ -91,7 +87,17 @@ main.nosotros_main{
             justify-self: center;
             box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.4);
             max-width: 50%;
-            
+        }
+
+        details summary{
+            margin-bottom: 1rem;
+            list-style: none;
+            cursor: pointer;
+            color: ab.$orange;
+            font-family: "Assistant", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1rem;
         }
   
     }
@@ -144,6 +150,17 @@ main.nosotros_main{
                     }
                 }
             }
+
+            details summary{
+                margin-bottom: 1rem;
+                list-style: none;
+                cursor: pointer;
+                color: ab.$orange;
+                font-family: "Assistant", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+                font-size: 1rem;
+            }
             
         }
     }
@@ -162,10 +179,7 @@ main.nosotros_main{
                 
                 font-family: "Roboto", sans-serif;
                 color: ab.$gray_2;
-                font-size: 1.5rem;
-                
-                
-               
+                font-size: 1.5rem; 
             }
 
             p{
@@ -174,9 +188,21 @@ main.nosotros_main{
                 font-weight: 300;
                 font-style: italic;
                 font-size: 1rem;
-                
-               
+                margin-bottom: 1rem; 
             }
+
+            details summary{
+                margin-bottom: 1rem;
+                list-style: none;
+                cursor: pointer;
+                color: ab.$gray;
+                font-family: "Assistant", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+                font-size: 1rem;
+            }
+
+
 
            
         }
@@ -201,17 +227,29 @@ main.nosotros_main{
                 color: ab.$orange;
                 font-weight: 300;
                 font-style: italic;
-                font-size: 1rem; 
+                font-size: 1rem;
+                margin-bottom: 1rem; 
+            }
+
+            details summary{
+                margin-bottom: 1rem;
+                list-style: none;
+                cursor: pointer;
+                color: ab.$gray;
+                font-family: "Assistant", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+                font-size: 1rem;
             }
         }    
     }
 
     div.historia_politicas{
         
-        padding: 4rem 15rem;
+        padding: 0 15rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         
 
         div.politicas{
@@ -268,13 +306,48 @@ main.nosotros_main{
             }
             
         }
+        
+    }
 
-        div.objetivos{
-            grid-row: 3;
-            grid-column: 1 /span 2;
-
+    details.details_policy{
+        padding: 0 255px 2rem 255px;
+    
+        summary{
+            list-style: none;
+            cursor: pointer;
+            color: ab.$orange;
+            font-family: "Assistant", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1rem;    
         }
 
+        h3{
+            font-family: "Roboto", sans-serif;
+            color: ab.$orange;
+            font-size: 1.5rem;
+            text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
+            i{
+                color: ab.$gray_2;
+                text-shadow: none;
+                font-size: 2rem;
+            };
+        }
+
+        p{
+          font-family: "Assistant", sans-serif;
+            color: ab.$gray_2;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1rem;
+            flex: 1;
+            text-align: justify;  
+        }
+        
+    }
+    
+    div.mensaje_final_nosotros{
+        padding: 0 255px 100px 255px;
         h2{
             text-align: center;
             color: ab.$gray_2;
@@ -283,11 +356,8 @@ main.nosotros_main{
             grid-column: span 2 / span 2;
             grid-row-start: 4;
             text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
-            background-image: url(../../img/deco/barco.svg);
-            background-repeat: no-repeat;
-            background-position: center 162px;
-            
         }
     }
+    
 }
 
