@@ -9,6 +9,7 @@
 
 main.servicios_main{
     background-color: ab.$gray;
+    
     h1{
         padding: 4rem;
         font-family: "Poppins", sans-serif;
@@ -17,75 +18,81 @@ main.servicios_main{
         text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
     }
 
-   article.servicios{
-        padding: 4rem;
-        padding-right: 164px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-self: center;
-
-        details summary{
-             margin-bottom: 1rem;
-                list-style: none;
-                cursor: pointer;
-                color: ab.$orange;
-                font-family: "Assistant", sans-serif;
-                font-weight: 300;
-                font-style: italic;
-                font-size: 1rem;
-        }
-
-
-        picture img{
-            box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
-        }
-
-        div.sercicios_page_text_container{
-            background-color: white;
-            padding: 2rem;
-            position: relative;
-            box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
+    section.servicios_servicios_container{
+        
+        article.servicios{
             
-            &.text_maritimo, &.text_aereo{
-                left: 100px;
-            }
+            padding: 4rem;
+            padding-right: 164px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-self: center;
 
-            h2{
-                font-family: "Roboto", sans-serif;
-                color: ab.$orange;
-                font-size: 2rem;
-                text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
-            }
-
-            p{
-                font-family: "Assistant", sans-serif;
-                color: ab.$gray_2;
-                font-weight: 300;
-                font-style: italic;
-                font-size: 1.25rem;
-                text-align: justify;
-            }
-        }
-
-        &.serv_maritimo, &.serv_aereo{
-            background-color:white;
-        }
-
-        &.serv_terrestre {
             
-            picture.terrestre_picture{
-                position: relative;
-                left: 100px;
-            }
-        }
 
-        &.serv_especiales{
-            picture.especiales_picture{
-                position: relative;
-                left: 100px;
+            details summary{
+                margin-bottom: 1rem;
+                    list-style: none;
+                    cursor: pointer;
+                    color: ab.$orange;
+                    font-family: "Assistant", sans-serif;
+                    font-weight: 300;
+                    font-style: italic;
+                    font-size: 1rem;
             }
-        }
+
+
+            picture img{
+                box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
+            }
+
+            div.sercicios_page_text_container{
+                background-color: white;
+                padding: 2rem;
+                position: relative;
+                box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
+                
+                &.text_maritimo, &.text_aereo{
+                    left: 100px;
+                }
+
+                h2{
+                    font-family: "Roboto", sans-serif;
+                    color: ab.$orange;
+                    font-size: 2rem;
+                    text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
+                }
+
+                p{
+                    font-family: "Assistant", sans-serif;
+                    color: ab.$gray_2;
+                    font-weight: 300;
+                    font-style: italic;
+                    font-size: 1.25rem;
+                    text-align: justify;
+                }
+            }
+
+            &.serv_maritimo, &.serv_aereo{
+                background-color: ab.$gray_2;
+            }
+
+            &.serv_terrestre {
+                background-color: ab.$orange;
+                picture.terrestre_picture{
+                    position: relative;
+                    left: 100px;
+                }
+            }
+
+            &.serv_especiales{
+                background-color: ab.$orange;
+                picture.especiales_picture{
+                    position: relative;
+                    left: 100px;
+                }
+            }
 
    
 
@@ -93,5 +100,6 @@ main.servicios_main{
     
 
 
+        }
     }
 }

@@ -76,7 +76,7 @@ header{
             p{
                 font-family: "Roboto", sans-serif;
                 font-size: 2rem;
-                color: ab.$gray_2;
+                color: ab.$gray;
                 font-style: italic;
                 font-weight: 700;
                 text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
@@ -95,7 +95,7 @@ main.index_main{
             content: "";
              background-color: ab.$orange;
              position: absolute;
-             top: 1054px;
+             top: 1180px;
              bottom: 0px;
              right: 0px;
              width: 100%;
@@ -337,7 +337,7 @@ main.index_main{
             gap: 4rem;
             max-width: 70%;
             position: absolute;
-            top: 2915px;
+            top: 3104px;
             left: 300px;
             align-items: center;
            
@@ -472,7 +472,7 @@ footer{
 
     div.hero_footer{
         position: absolute;
-        top: 4960px;
+        top: 5100px;
         left: 260px;
 
         display: grid;
@@ -546,10 +546,12 @@ footer{
 
     div.derechos_container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         
-        padding: 3rem;
+        
+        
+        padding: 3rem 3rem 3rem 3rem;
 
         div.derechos{
             display: flex;
@@ -562,7 +564,7 @@ footer{
                     max-width: 30%;
                     border-radius: 80px;
                     position: relative;
-                    left: 176px;
+                    left: 158px;
                     
                     
                 }
@@ -591,9 +593,30 @@ footer{
             }
         }
 
-         div.derechos_servicios{
+        div.paginas_footer{
+            h4{
+                font-family: "Roboto", sans-serif;
+                font-size: 1rem;
+                color: ab.$orange;
+            }
+
+            ul li a{
+                font-family: "Assistant", sans-serif;
+                font-size: 0.87rem;
+                color: ab.$gray;
+                text-decoration: none;
+                &:hover{
+                    text-decoration:underline;
+                    text-decoration-color: ab.$orange;
+                }
+
+            }
+        }
+
+        div.derechos_servicios{
             display: flex;
             flex-direction: column;
+            justify-self: left;
             h4{
                 font-family: "Roboto", sans-serif;
                 font-size: 1rem;
