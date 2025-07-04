@@ -19,6 +19,10 @@ main.nosotros_main{
         align-items: center;
         max-width: 80%;
         padding: 4rem;
+
+        @include ab.breakpoint(desktop){
+            max-width: 90%;
+        }
            
         div.historia_texto{
             display: flex;
@@ -47,6 +51,9 @@ main.nosotros_main{
             justify-self: center;
             box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.4);
             max-width: 50%;
+            @include ab.breakpoint(desktop){
+                max-width: 60%;
+            }   
         }
 
        
@@ -61,6 +68,11 @@ main.nosotros_main{
         max-width: 80%;
         padding: 4rem;
         gap: 4rem;
+
+        @include ab.breakpoint(desktop){
+            max-width: 90%;
+            padding-top: 0;
+        }
 
          img{
             justify-self: center;
@@ -113,6 +125,9 @@ main.nosotros_main{
             background-color: ab.$orange;
             padding: 2rem;
             margin-left: 15rem;
+            @include ab.breakpoint(desktop){
+                padding: 1.5rem;
+            }
            
 
             h3{
@@ -142,7 +157,10 @@ main.nosotros_main{
             background-color: ab.$gray_2;
             padding: 2rem;
             margin-left: 32rem;
-            
+
+            @include ab.breakpoint(desktop){
+                padding: 1.5rem;
+            }           
            
 
             h3{
@@ -172,6 +190,9 @@ main.nosotros_main{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         
+        @include ab.breakpoint(desktop){
+            padding: 0 8rem;
+        }
 
         div.politicas{
             
@@ -221,9 +242,17 @@ main.nosotros_main{
             grid-row: span 2 / span 2;
             grid-column-start: 2;
             grid-row-start: 1;
+
+            @include ab.breakpoint(desktop){
+                align-self: flex-start;
+                justify-self: right;
+            }
             img{
                 max-width: 80%;
                 box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
+                @include ab.breakpoint(desktop){
+                    max-width: 85%;
+                }
             }
             
         }

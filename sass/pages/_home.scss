@@ -615,6 +615,9 @@ footer{
             opacity:  0.8;
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
+            @include ab.breakpoint(desktop){
+                font-size: 1.25rem;
+            }
            
         }
 
