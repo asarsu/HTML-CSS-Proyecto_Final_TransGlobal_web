@@ -17,6 +17,9 @@ main.servicios_main{
         font-size: 4rem;
         color: ab.$orange;
         text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+        @include ab.breakpoint(desktop){
+            font-size: 3rem;
+        }
     }
 
     section.servicios_servicios_container{
@@ -32,6 +35,9 @@ main.servicios_main{
 
             picture img{
                 box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
+                @include ab.breakpoint(desktop){
+                    max-width: 108%;
+                }   
             }
 
             div.sercicios_page_text_container{
@@ -58,6 +64,10 @@ main.servicios_main{
                     font-style: italic;
                     font-size: 1.25rem;
                     text-align: justify;
+
+                    @include ab.breakpoint(desktop){
+                        font-size: 1rem;
+                    }
                 }
             }
 
@@ -80,12 +90,6 @@ main.servicios_main{
                     left: 100px;
                 }
             }
-
-   
-
-       
-    
-
 
         }
     }
