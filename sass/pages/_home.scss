@@ -779,6 +779,11 @@ footer{
             div.direcciones_container{
                 display: flex;
                 gap: 2rem;
+
+                @include ab.breakpoint(desktop){
+                    gap: 1rem;
+                }
+
                 div.dir{
                     max-width: 100%;
                     p{  font-size: 0.87rem;
