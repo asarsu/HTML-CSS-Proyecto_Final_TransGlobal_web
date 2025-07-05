@@ -23,10 +23,19 @@ header{
             padding: 16px 32px;
             gap: 500px;
         }
+
+        @include ab.breakpoint(tablet-horizontal){
+            padding: 1.5rem;
+            gap: 100px;
+        }
     
         picture{
             max-width: 10%;
             flex: 1;
+
+            @include ab.breakpoint(tablet-horizontal){
+                max-width: 14%;
+            }
 
             img{
                 max-width: 100%;
@@ -102,9 +111,9 @@ header{
             top: 256px;
             left: 78px;
 
-             @include ab.breakpoint(desktop){
-                top: 173px;
-                left: 78px;
+             @include ab.breakpoint(tablet-horizontal){
+                top: 159px;
+                left: 35px;
             }
 
             h1{
@@ -150,6 +159,10 @@ main.index_main{
         padding-top: 4rem;
     }
 
+    @include ab.breakpoint(tablet-horizontal){
+        padding-top: 2rem;
+    }
+
         &::before{
             content: "";
              background-color: ab.$orange;
@@ -165,6 +178,10 @@ main.index_main{
                  top: 907px;
              }
 
+             @include ab.breakpoint(tablet-horizontal){
+                 top: 732px;
+             }
+
         }
 
     div.services_container{
@@ -178,6 +195,11 @@ main.index_main{
         @include ab.breakpoint(desktop){
             max-width: 84%;
             padding-bottom: 4rem;
+        }
+
+        @include ab.breakpoint(tablet-horizontal){
+            max-width: 92%;
+            padding-bottom: 2rem;
         }
         
         
@@ -266,7 +288,12 @@ main.index_main{
         background-color: ab.$gray;
         gap: 4rem;
         padding: 4rem;
-         
+        
+        @include ab.breakpoint(tablet-horizontal){
+            padding: 2rem;
+            justify-content: space-evenly;
+            gap: 2rem;
+        }
          
 
         div.text_nosotros_container{
@@ -277,6 +304,11 @@ main.index_main{
 
              @include ab.breakpoint(desktop){
                 gap: 1rem;
+             }
+
+             @include ab.breakpoint(tablet-horizontal){
+                max-width: 46%;
+                
              }
              
              h2{
@@ -313,6 +345,10 @@ main.index_main{
                     max-width: 20%;
                 }
 
+                 @include ab.breakpoint(tablet-horizontal){
+                    max-width: 25%;
+                }
+
                 img{
                     max-width: 100%;
                 }
@@ -328,6 +364,11 @@ main.index_main{
         gap: 4rem;
         padding-bottom: 4rem;
 
+        @include ab.breakpoint(tablet-horizontal){
+            padding-bottom: 2rem;
+            gap: 7.5rem;
+        }
+
         div.valores{
             display: flex;
             gap: 1rem;
@@ -336,6 +377,10 @@ main.index_main{
             justify-content: center;
             max-width: fit-content;
             box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.4);
+
+            @include ab.breakpoint(tablet-horizontal){
+                padding: 0.5rem;
+            }
     
             &.calidad{
                 background: #666666;
@@ -369,6 +414,9 @@ main.index_main{
         background-color: #666666;
         padding: 4rem;
 
+        @include ab.breakpoint(tablet-horizontal){
+            padding: 2rem;
+        }
         
 
         div.independientes_container{
@@ -380,7 +428,10 @@ main.index_main{
             picture{
                 max-width: 20%;
                 
-                
+                @include ab.breakpoint(tablet-horizontal){
+                    max-width: 25%;
+                }
+
                 img{
                     max-width: 100%;
                 }
@@ -439,7 +490,14 @@ main.index_main{
                 top: 2547px;
                 left: 151px;
                 max-width: 80%;
-                padding: 1rem;
+                padding: 1rem;  
+            }
+
+             @include ab.breakpoint(tablet-horizontal){
+                top: 2080px;
+                left: 85px;
+                max-width: 83%;
+                padding: 0;
                 
             }
            
@@ -447,11 +505,21 @@ main.index_main{
                display: flex;
                flex-direction: column;
                gap: 2rem;
+
+                @include ab.breakpoint(tablet-horizontal){
+                    gap: 5rem;
+                }
+
                h2{
                     color: white;
                     font-family: "Roboto", sans-serif;
                     font-size: 3rem;
                     font-weight: 700;
+                    @include ab.breakpoint(tablet-horizontal){
+                        font-size: 2rem;
+                        color: ab.$orange;
+                        
+                    }
                     
                }
 
@@ -459,7 +527,11 @@ main.index_main{
                     color: white;
                     font-family: "Assistant", sans-serif;
                     font-size: 1.25rem;
-                    font-weight: 500;  
+                    font-weight: 500;
+                    @include ab.breakpoint(tablet-horizontal){
+                        font-size: 1rem;
+                        
+                    }  
                }
             }
 
@@ -473,6 +545,10 @@ main.index_main{
                     font-size: 2rem;
                     font-weight: 600;
                     font-style: italic;
+                    @include ab.breakpoint(tablet-horizontal){
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
                 }
 
                 button{
@@ -492,6 +568,10 @@ main.index_main{
                             background-color: #333333;
                             color: white;
                         }
+
+                        @include ab.breakpoint(tablet-horizontal){
+                            padding: 8px 28px;
+                        }
                     }
                 }
             }
@@ -503,12 +583,20 @@ main.index_main{
         background-color: white;
         padding: 6rem;
 
+        @include ab.breakpoint(tablet-horizontal){
+            padding: 2rem 4rem;
+        }
+
         div.mision_vision_text{
             display: flex;
             gap: 3rem;
             align-items: center;
             justify-content: center;
-           
+            @include ab.breakpoint(tablet-horizontal){
+                gap: 7rem;
+               
+                
+            }
 
             div.mision_text{
                 max-width: 25%;
@@ -517,6 +605,10 @@ main.index_main{
 
                 @include ab.breakpoint(desktop){
                     max-width: 44%;
+                }
+
+                @include ab.breakpoint(tablet-horizontal){
+                    max-width: 54%;
                 }
 
                 
@@ -564,6 +656,10 @@ main.index_main{
                     max-width: 25%;
                     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
 
+                    @include ab.breakpoint(tablet-horizontal){
+                        max-width: 30%;
+                    }
+
                     img{
                         max-width: 100%;
                         border-top: 5px solid white;
@@ -605,6 +701,13 @@ footer{
             padding: 0;;
         }
 
+        @include ab.breakpoint(tablet-horizontal){
+            top: 3181px;
+            left: 48px;
+            padding: 0;
+            max-width: 90%;
+        }
+
         p.message{
             font-family: "Assistant", sans-serif;
             font-size: 1.5rem;
@@ -618,6 +721,9 @@ footer{
             @include ab.breakpoint(desktop){
                 font-size: 1.25rem;
             }
+            @include ab.breakpoint(tablet-horizontal){
+                font-size: 1rem;
+            }
            
         }
 
@@ -626,6 +732,19 @@ footer{
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
             opacity: 0.8;
+
+            @include ab.breakpoint(tablet-horizontal){
+                max-height: 91%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                justify-content: space-evenly;
+
+                #mensaje{
+                    height: 70%;
+                }
+               
+            }
             
             div{
                 display: flex;
@@ -662,6 +781,12 @@ footer{
                     background-color: white;
                     color: ab.$gray_2;
                 }
+
+                @include ab.breakpoint(tablet-horizontal){
+                    padding: 8px 32px;
+                    position: relative;
+                    top: -22px;
+                }
             }
            
            
@@ -677,12 +802,41 @@ footer{
         @include ab.breakpoint(desktop){
            align-items: center;
         }
+
+        @include ab.breakpoint(tablet-horizontal){
+           padding: 2rem;
+           display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 8px;
+            .derechos{
+                grid-row: span 2 / span 2;
+            }
+
+            .paginas_footer{
+                grid-column: span 1 / span 2;
+            }
+
+            .derechos_servicios{
+                grid-column-start: 2;
+                grid-row-start: 2;
+                
+            }
+
+            .direcciones{
+                grid-row: span 2 / span 2;
+                grid-column-start: 3;
+                grid-row-start: 1;
+            }
+        }
                               
         div.derechos{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            align-items: center;         
+            align-items: center;
+            
+            
            
                 
                 img{
@@ -692,9 +846,14 @@ footer{
                     left: 158px;
                     @include ab.breakpoint(desktop){
                         left: 91px;
-                        max-width: 45%;
-                        
+                        max-width: 45%;  
                     }
+
+                    @include ab.breakpoint(tablet-horizontal){
+                        left: 88px;    
+                    }
+
+
                     
                     
                 }
@@ -727,6 +886,16 @@ footer{
         }
 
         div.paginas_footer{
+
+            @include ab.breakpoint(tablet-horizontal){
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+                position: relative;
+                left: -34px;
+
+            }
+
             h4{
                 font-family: "Roboto", sans-serif;
                 font-size: 1rem;
@@ -742,7 +911,6 @@ footer{
                     text-decoration:underline;
                     text-decoration-color: ab.$orange;
                 }
-
             }
         }
 
@@ -750,6 +918,11 @@ footer{
             display: flex;
             flex-direction: column;
             justify-self: left;
+
+            @include ab.breakpoint(tablet-horizontal){
+                justify-self: center;
+            }
+
             h4{
                 font-family: "Roboto", sans-serif;
                 font-size: 1rem;
@@ -766,9 +939,16 @@ footer{
                     text-decoration-color: ab.$orange;
                 }
             }
+
+
         }
 
         div.direcciones{
+            @include ab.breakpoint(tablet-horizontal){
+                position: relative;
+                top: -16px;
+               
+            }
             
             h4{
                 margin-bottom: 1rem;
