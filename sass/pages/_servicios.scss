@@ -20,6 +20,10 @@ main.servicios_main{
         @include ab.breakpoint(desktop){
             font-size: 3rem;
         }
+        @include ab.breakpoint(tablet-horizontal){
+            font-size: 2rem;
+            padding: 4rem 2rem 2rem;
+        }
     }
 
     section.servicios_servicios_container{
@@ -33,6 +37,11 @@ main.servicios_main{
             align-items: center;
             justify-self: center;
 
+            @include ab.breakpoint(tablet-horizontal){
+                padding: 2rem;
+                padding-right: 6rem;
+            }
+
             picture img{
                 box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
                 @include ab.breakpoint(desktop){
@@ -45,9 +54,17 @@ main.servicios_main{
                 padding: 2rem;
                 position: relative;
                 box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
+
+                @include ab.breakpoint(tablet-horizontal){
+                    padding: 1rem;
+                    
+                }
                 
                 &.text_maritimo, &.text_aereo{
                     left: 100px;
+                    @include ab.breakpoint(tablet-horizontal){
+                        left: 36px;
+                    }
                 }
 
                 h2{
@@ -77,17 +94,33 @@ main.servicios_main{
 
             &.serv_terrestre {
                 background-color: ab.$orange;
+                @include ab.breakpoint(tablet-horizontal){
+                    padding-right: 64px;
+                }
+              
                 picture.terrestre_picture{
                     position: relative;
                     left: 100px;
+                    @include ab.breakpoint(tablet-horizontal){
+                        left: 36px;
+                    }         
                 }
             }
 
             &.serv_especiales{
                 background-color: ab.$orange;
+                @include ab.breakpoint(tablet-horizontal){
+                    padding-right: 64px;
+                }
+                
                 picture.especiales_picture{
                     position: relative;
                     left: 100px;
+                    @include ab.breakpoint(tablet-horizontal){
+                        left: 36px;
+                    }
+
+                   
                 }
             }
 

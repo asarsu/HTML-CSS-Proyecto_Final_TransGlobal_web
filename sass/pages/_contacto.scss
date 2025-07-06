@@ -24,14 +24,17 @@ main.main_contacto{
         justify-self: center;
         padding: 4rem;
        
-        
-        
-
         @include ab.breakpoint(desktop){
             top: 100px;
             left: 100px;
-            padding: 4rem 0;
-           
+            padding: 4rem 0;           
+        }
+
+        @include ab.breakpoint(tablet-horizontal){
+            max-width: 87%;
+            flex-direction: row;
+            align-items: center;
+            
         }
 
         p.message{
@@ -46,6 +49,9 @@ main.main_contacto{
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
             @include ab.breakpoint(desktop){
                 font-size: 1.25rem;
+            }
+            @include ab.breakpoint(tablet-horizontal){
+                font-size: 1rem;
             }
            
         }
@@ -91,6 +97,10 @@ main.main_contacto{
                     background-color: white;
                     color: ab.$gray_2;
                 }
+
+                @include ab.breakpoint(tablet-horizontal){
+                    padding: 8px 32px;
+                }
             }
            
            
@@ -114,6 +124,9 @@ main.main_contacto{
             font-size: 2rem;
             color: ab.$orange;
             text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
+             @include ab.breakpoint(tablet-horizontal){
+                font-size: 1.5rem;
+            }
         }
 
         p{
@@ -123,6 +136,10 @@ main.main_contacto{
             font-style: italic;
             font-size: 1.25rem;
             text-align: justify;
+
+            @include ab.breakpoint(tablet-horizontal){
+                font-size: 1rem;
+            }
 
             a, strong{
                 color: ab.$orange;
