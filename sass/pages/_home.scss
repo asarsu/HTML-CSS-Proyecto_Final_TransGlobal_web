@@ -88,6 +88,10 @@ header{
                             @include ab.breakpoint(desktop){
                                 max-width: 10%;
                             }
+
+                            @include ab.breakpoint(tablet){
+                                max-width: 34%;
+                            }
                         }
                     } 
 
@@ -111,9 +115,14 @@ header{
             top: 256px;
             left: 78px;
 
-             @include ab.breakpoint(tablet-horizontal){
+            @include ab.breakpoint(tablet-horizontal){
                 top: 159px;
                 left: 35px;
+            }
+
+            @include ab.breakpoint(tablet){
+                top: 138px;
+                left: 36px;
             }
 
             h1{
@@ -135,6 +144,16 @@ header{
                     }
                 }
 
+                @include ab.breakpoint(tablet){
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+
+               
+
             }
 
             p{
@@ -147,6 +166,11 @@ header{
                 text-align: center;
                 position: relative;
                 top: -15px;
+
+                @include ab.breakpoint(desktop){
+                    font-size: 1.25rem;
+                    text-align: left;
+                }
             }
         }
     }
@@ -161,6 +185,10 @@ main.index_main{
 
     @include ab.breakpoint(tablet-horizontal){
         padding-top: 2rem;
+    }
+
+    @include ab.breakpoint(tablet){
+        padding-top: 0;
     }
 
         &::before{
@@ -200,6 +228,14 @@ main.index_main{
         @include ab.breakpoint(tablet-horizontal){
             max-width: 92%;
             padding-bottom: 2rem;
+        }
+
+        @include ab.breakpoint(tablet){
+            grid-template-columns: repeat(2, 1fr);
+            margin: 2rem;
+            padding: 0;
+            max-width: 100%;
+            box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.4);
         }
         
         
@@ -317,6 +353,10 @@ main.index_main{
                 font-size: 3rem;
                 font-weight: 400;
                 text-align: center;
+
+                @include ab.breakpoint(tablet){
+                    font-size: 2rem;
+                }
              }
 
              p{
@@ -368,6 +408,12 @@ main.index_main{
             padding-bottom: 2rem;
             gap: 7.5rem;
         }
+
+         @include ab.breakpoint(tablet){
+            gap: 2.5rem;
+        }
+
+
 
         div.valores{
             display: flex;
@@ -430,6 +476,10 @@ main.index_main{
                 
                 @include ab.breakpoint(tablet-horizontal){
                     max-width: 25%;
+                }
+
+                @include ab.breakpoint(tablet){
+                    max-width: 32%;
                 }
 
                 img{
@@ -497,9 +547,17 @@ main.index_main{
                 top: 2080px;
                 left: 85px;
                 max-width: 83%;
-                padding: 0;
-                
+                padding: 0;                
             }
+
+             @include ab.breakpoint(tablet){
+                top: 2539px;
+                left: 70px;
+                max-width: 85%;
+                padding: 0;                
+            }
+
+
            
             div.call_text_title{
                display: flex;
@@ -510,6 +568,10 @@ main.index_main{
                     gap: 5rem;
                 }
 
+                @include ab.breakpoint(tablet){
+                    gap: 4rem;
+                }
+
                h2{
                     color: white;
                     font-family: "Roboto", sans-serif;
@@ -518,9 +580,11 @@ main.index_main{
                     @include ab.breakpoint(tablet-horizontal){
                         font-size: 2rem;
                         color: ab.$orange;
-                        
                     }
                     
+                    @include ab.breakpoint(tablet){
+                       
+                    }
                }
 
                p{
@@ -529,8 +593,12 @@ main.index_main{
                     font-size: 1.25rem;
                     font-weight: 500;
                     @include ab.breakpoint(tablet-horizontal){
-                        font-size: 1rem;
-                        
+                        font-size: 1rem;  
+                    }
+                    
+                    @include ab.breakpoint(tablet){
+                        color: ab.$gray;
+                          
                     }  
                }
             }
@@ -585,6 +653,10 @@ main.index_main{
 
         @include ab.breakpoint(tablet-horizontal){
             padding: 2rem 4rem;
+        }
+
+         @include ab.breakpoint(tablet){
+            padding: 2rem;
         }
 
         div.mision_vision_text{
@@ -708,6 +780,15 @@ footer{
             max-width: 90%;
         }
 
+         @include ab.breakpoint(tablet){
+            display: flex;
+            flex-direction: row;
+            max-width: 92%;
+            gap: 1rem;
+            top: 3574px;
+            left: 28px;
+        }
+
         p.message{
             font-family: "Assistant", sans-serif;
             font-size: 1.5rem;
@@ -724,6 +805,8 @@ footer{
             @include ab.breakpoint(tablet-horizontal){
                 font-size: 1rem;
             }
+
+            
            
         }
 
@@ -742,8 +825,14 @@ footer{
 
                 #mensaje{
                     height: 70%;
-                }
-               
+                }               
+            }
+
+            @include ab.breakpoint(tablet){
+                gap: 0.5rem;
+                padding: 1rem;
+                max-width: 97%;
+                justify-content: space-evenly;
             }
             
             div{
@@ -829,6 +918,40 @@ footer{
                 grid-row-start: 1;
             }
         }
+
+        @include ab.breakpoint(tablet){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 8px;
+            align-items: flex-start;
+           
+            .paginas_footer{
+                grid-row: 1;
+                
+            }
+            .derechos_servicios{
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            .direcciones{
+                grid-row:2;
+                grid-column: 1 /span 2;
+                h4{margin-left: 1.8rem;}
+                
+                .direcciones_container{
+                    position: relative;
+                    left: 32px;
+                }
+                
+            }
+
+            .derechos{
+                grid-column: 1 /span 2;
+                grid-row: 3;
+            }
+        }
                               
         div.derechos{
             display: flex;
@@ -851,6 +974,11 @@ footer{
 
                     @include ab.breakpoint(tablet-horizontal){
                         left: 88px;    
+                    }
+
+                     @include ab.breakpoint(tablet){
+                        left: 176px;
+                        max-width: 30%;    
                     }
 
 
@@ -893,7 +1021,11 @@ footer{
                 justify-self: center;
                 position: relative;
                 left: -34px;
+            }
 
+            @include ab.breakpoint(tablet){
+                left: -110px;
+                top: 29px;
             }
 
             h4{
@@ -921,6 +1053,12 @@ footer{
 
             @include ab.breakpoint(tablet-horizontal){
                 justify-self: center;
+            }
+
+            @include ab.breakpoint(tablet){
+                position: relative;
+                top: 29px;
+                left: -180px;
             }
 
             h4{
