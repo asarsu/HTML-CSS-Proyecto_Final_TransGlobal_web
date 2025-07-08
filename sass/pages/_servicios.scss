@@ -42,11 +42,21 @@ main.servicios_main{
                 padding-right: 6rem;
             }
 
+            @include ab.breakpoint(tablet){
+                padding: 2rem;
+                padding-right: 4rem;
+            }
+
             picture img{
                 box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
                 @include ab.breakpoint(desktop){
                     max-width: 108%;
+                }
+                
+                @include ab.breakpoint(tablet){
+                    max-width: 120%;
                 }   
+
             }
 
             div.sercicios_page_text_container{
@@ -56,14 +66,27 @@ main.servicios_main{
                 box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
 
                 @include ab.breakpoint(tablet-horizontal){
-                    padding: 1rem;
-                    
+                    padding: 1rem;                    
                 }
-                
+
+        
                 &.text_maritimo, &.text_aereo{
                     left: 100px;
                     @include ab.breakpoint(tablet-horizontal){
                         left: 36px;
+                    }
+
+                     @include ab.breakpoint(tablet){
+                        left: 0;
+                        z-index: 1;                   
+                    }
+                }
+
+                &.text_terrestre, &.text_especiales{
+                    
+                    @include ab.breakpoint(tablet){
+                        left: 34px;
+                        top: -3px;
                     }
                 }
 
@@ -72,6 +95,9 @@ main.servicios_main{
                     color: ab.$orange;
                     font-size: 2rem;
                     text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
+                    @include ab.breakpoint(tablet){
+                        font-size: 1.5rem;
+                    }
                 }
 
                 p{
@@ -90,6 +116,14 @@ main.servicios_main{
 
             &.serv_maritimo, &.serv_aereo{
                 background-color: ab.$gray_2;
+
+                picture{
+                    @include ab.breakpoint(tablet){
+                        position: relative;
+                        left: -34px;
+                        z-index: 0;
+                    }
+                }
             }
 
             &.serv_terrestre {
@@ -103,7 +137,11 @@ main.servicios_main{
                     left: 100px;
                     @include ab.breakpoint(tablet-horizontal){
                         left: 36px;
-                    }         
+                    }
+                    
+                    @include ab.breakpoint(tablet){
+                        left: 0;            
+                    }    
                 }
             }
 
@@ -120,7 +158,9 @@ main.servicios_main{
                         left: 36px;
                     }
 
-                   
+                    @include ab.breakpoint(tablet){
+                        left: 0;            
+                    }                       
                 }
             }
 
