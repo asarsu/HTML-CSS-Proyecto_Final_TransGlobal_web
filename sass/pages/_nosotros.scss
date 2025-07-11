@@ -6,6 +6,86 @@
 @use '../themes';
 @use '../settings';
 
+div.hero_title{
+            position: absolute;
+            top: 256px;
+            left: 78px;
+
+            @include ab.breakpoint(tablet-horizontal){
+                top: 159px;
+                left: 35px;
+            }
+
+            @include ab.breakpoint(tablet){
+                top: 138px;
+                left: 36px;
+            }
+
+            @include ab.breakpoint(mobile-l){
+                top: 20px;
+                left: 136px;
+            }
+
+            h1{
+                font-size: 4rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-family: "Poppins", sans-serif;
+                color: ab.$orange;
+                letter-spacing: 5px;
+                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+                span{
+                    font-size: 2rem;
+                }
+
+                @include ab.breakpoint(desktop){
+                    font-size: 3rem;
+                    span{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                @include ab.breakpoint(tablet){
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+
+                @include ab.breakpoint(mobile-l){
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 1px;
+                    span{
+                        font-size: 0.5rem;
+                    }
+                }               
+            }
+
+            p{
+                font-family: "Roboto", sans-serif;
+                font-size: 2rem;
+                color: ab.$gray;
+                font-style: italic;
+                font-weight: 700;
+                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+                text-align: center;
+                position: relative;
+                top: -15px;
+
+                @include ab.breakpoint(desktop){
+                    font-size: 1.25rem;
+                    text-align: left;
+                }
+
+                @include ab.breakpoint(mobile-l){
+                    font-size: 0.8rem;
+                    text-align: left;
+                    color: ab.$gray_2;
+                }
+            }
+        }
 
 main.nosotros_main{
     background-color: ab.$gray;
@@ -14,6 +94,13 @@ main.nosotros_main{
     @include ab.breakpoint(tablet){
         background-image: url(../../img/pictures/nosotros/puerto_768x529.jpg);
         background-repeat: no-repeat;
+    }
+
+    @include ab.breakpoint(mobile-l){
+        background-image: url(../../img/pictures/nosotros/puerto_768x529.jpg);
+        background-repeat: no-repeat;
+        background-position: -488px 0;
+        background-size: 238%;
     }
     
     
@@ -44,6 +131,7 @@ main.nosotros_main{
 
         @include ab.breakpoint(mobile-l){
             max-width: 100%;
+            margin-bottom: 1rem;
             
         }
 
@@ -143,6 +231,17 @@ main.nosotros_main{
             gap: 2rem;
         }
 
+        @include ab.breakpoint(mobile-l){
+            max-width: 100%;
+            padding: 2rem;
+            background-image: url(../../img/img_nosotros/hombre_de_almacen.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 2rem;
+           
+        }
+
          img{
             justify-self: center;
             box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.4);
@@ -153,7 +252,11 @@ main.nosotros_main{
             }
             @include ab.breakpoint(tablet){
                 max-width: 100%;
-            }   
+            }
+            
+            @include ab.breakpoint(mobile-l){
+                display: none;                
+            }  
         }
 
         div.historia_servicios_texto{
@@ -176,6 +279,12 @@ main.nosotros_main{
                 top: 866px;
             }
 
+            @include ab.breakpoint(mobile-l){
+                position: relative;
+                top: 34px;
+                padding: 1rem;
+            }
+
 
             h2{
                 font-family: "Roboto", sans-serif;
@@ -196,17 +305,20 @@ main.nosotros_main{
                     gap: 0.5rem;
                 }
 
+                 @include ab.breakpoint(mobile-l){
+                    gap: 1rem;
+                }
+
                 li{
                     font-size: 1rem;
                     font-family: "Assistant", sans-serif;
                     font-style: italic;
                     font-weight: 300;
-                    
-                        color: ab.$gray_2;
-                        @include ab.breakpoint(tablet){
-                            color: ab.$gray;
-                        }
-                    
+                    color: ab.$gray_2;
+                    @include ab.breakpoint(tablet){
+                        color: ab.$gray;
+                    }
+                                        
                     i{
                         color: ab.$orange;
                     }
@@ -224,6 +336,10 @@ main.nosotros_main{
             padding-bottom: 2rem;
         }
 
+        @include ab.breakpoint(tablet){
+            padding-bottom: 0;
+        }
+
         div.historia_vision_text{
             background-color: ab.$orange;
             padding: 2rem;
@@ -239,6 +355,11 @@ main.nosotros_main{
 
             @include ab.breakpoint(tablet){
                 margin-left: 38px;
+            }
+
+            @include ab.breakpoint(mobile-l){
+                margin-left: 0;
+                padding: 2rem;
             }
            
 
@@ -278,6 +399,11 @@ main.nosotros_main{
             
             @include ab.breakpoint(tablet){
                 margin-left: 76px;
+            }
+
+             @include ab.breakpoint(mobile-l){
+                margin-left: 2rem;
+                padding: 2rem;
             }
 
             h3{
@@ -367,6 +493,12 @@ main.nosotros_main{
                         color: ab.$orange;
                     }
                 }
+
+                @include ab.breakpoint(mobile-l){
+                    text-align: center;
+                    font-size: 1.2rem;
+
+                }
             }
 
             p{
@@ -431,6 +563,12 @@ main.nosotros_main{
             padding: 1rem;
         }
 
+        @include ab.breakpoint(mobile-l){
+           padding: 0;
+           background-size: auto;
+          
+        }
+
         h2{
             text-align: center;
             color: ab.$gray_2;
@@ -446,6 +584,12 @@ main.nosotros_main{
 
             @include ab.breakpoint(tablet){
                 padding: 3rem;
+                color: ab.$gray;
+            }
+
+            @include ab.breakpoint(mobile-l){
+                padding: 2rem;
+                backdrop-filter: blur(5px) grayscale(0.5);
                 color: ab.$gray;
             }
         }
