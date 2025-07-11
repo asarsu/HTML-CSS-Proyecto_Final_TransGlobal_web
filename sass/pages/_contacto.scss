@@ -13,6 +13,10 @@ main.main_contacto{
     @include ab.breakpoint(tablet){
         padding: 2rem;
     }
+
+    @include ab.breakpoint(mobile-l){
+        padding: 0;
+    }
    
     div.hero_footer{
        
@@ -41,6 +45,17 @@ main.main_contacto{
            flex-direction: column; 
         }
 
+        @include ab.breakpoint(mobile-l){
+            max-width: 100%;
+            gap: 0.7rem;
+            top: 6413px;
+            left: 0px;
+            position: relative;
+            top: 0;
+            flex-direction: column;
+             background-image: url(../../img/pictures/footer_pics/containers_wall_425x616.jpg);
+        }
+
         p.message{
             font-family: "Assistant", sans-serif;
             font-size: 1.5rem;
@@ -57,6 +72,10 @@ main.main_contacto{
             @include ab.breakpoint(tablet-horizontal){
                 font-size: 1rem;
             }
+            @include ab.breakpoint(mobile-l){
+                max-width: 100%;
+                font-size: 0.8rem;
+            } 
            
         }
 
@@ -65,6 +84,17 @@ main.main_contacto{
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
             opacity: 0.8;
+
+            @include ab.breakpoint(mobile-l){
+                gap: 0.5rem;
+                padding: 1rem;
+                max-width: 100%;
+               
+                flex-direction: column;
+                #mensaje{
+                    width: 100%;
+                }
+            }
             
             div{
                 display: flex;
@@ -104,7 +134,7 @@ main.main_contacto{
 
                 @include ab.breakpoint(tablet-horizontal){
                     padding: 8px 32px;
-                }
+                }                
             }
            
            
@@ -125,6 +155,10 @@ main.main_contacto{
 
         @include ab.breakpoint(tablet){
             margin: 2rem 1rem;
+        }
+
+        @include ab.breakpoint(mobile-l){
+            margin: 2rem 0;
         }
         
         h3{
@@ -147,6 +181,10 @@ main.main_contacto{
 
             @include ab.breakpoint(tablet-horizontal){
                 font-size: 1rem;
+            }
+
+            @include ab.breakpoint(mobile-l){
+                text-align: center;
             }
 
             a, strong{

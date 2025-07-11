@@ -21,17 +21,23 @@ header{
 
         @include ab.breakpoint(desktop){
             padding: 16px 32px;
-            gap: 500px;
+            gap: 40rem;
         }
 
         @include ab.breakpoint(tablet-horizontal){
-            padding: 1.5rem;
-            gap: 100px;
+            padding: 1rem;
+            gap: 24rem;
+        }
+
+        @include ab.breakpoint(tablet){
+            padding: 1rem;
+            gap: 35rem;
         }
 
         @include ab.breakpoint(mobile-l){
             justify-content: space-between;
             padding: 1rem;
+            gap: 1rem;
         }
     
         picture{
@@ -47,7 +53,110 @@ header{
             }
 
             img{
-                max-width: 100%;   
+                max-width: 100%;
+                @include ab.breakpoint(tablet-horizontal){
+                    max-width: 80%;
+                } 
+            }
+        }
+
+
+        div.hero_title{
+            position: absolute;
+            top: 26px;
+            left: 262px;
+
+            @include ab.breakpoint(desktop){
+                top: 5px;
+                left: 193px;
+            }
+
+            @include ab.breakpoint(tablet-horizontal){
+                top: 20px;
+                left: 148px;
+            }
+
+            @include ab.breakpoint(tablet){
+                top: 20px;
+                left: 112px;
+            }
+
+            @include ab.breakpoint(mobile-l){
+                top: 20px;
+                left: 136px;
+            }
+
+            h1{
+                font-size: 2rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-family: "Poppins", sans-serif;
+                color: ab.$orange;
+                letter-spacing: 5px;
+                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+                span{
+                    font-size: 2rem;
+                }
+
+                @include ab.breakpoint(desktop){
+                    font-size: 3rem;
+                    span{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                @include ab.breakpoint(tablet-horizontal){
+                    font-size: 1.5rem;
+                    margin-bottom: 5px;
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+
+                @include ab.breakpoint(tablet){
+                    font-size: 1rem;
+                    
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+
+                @include ab.breakpoint(mobile-l){
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 1px;
+                    span{
+                        font-size: 0.5rem;
+                    }
+                }               
+            }
+
+            p{
+                font-family: "Roboto", sans-serif;
+                font-size: 1.5rem;
+                color: ab.$gray_2;
+                font-style: italic;
+                font-weight: 700;
+                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+                text-align: center;
+                position: relative;
+                top: -15px;
+
+                @include ab.breakpoint(desktop){
+                    font-size: 1.25rem;
+                    text-align: left;
+                }
+
+                 @include ab.breakpoint(tablet-horizontal){
+                    font-size: 1rem;
+                    text-align: left;
+                }
+
+                @include ab.breakpoint(mobile-l){
+                    font-size: 0.8rem;
+                    text-align: left;
+                   
+                }
             }
         }
 
@@ -77,6 +186,11 @@ header{
                     gap: 32px;                    
                 }
 
+                 @include ab.breakpoint(tablet-horizontal){
+                    gap: 1rem;                    
+                }
+
+
                 @include ab.breakpoint(mobile-l){
                     gap: 1rem;                    
                 }
@@ -91,6 +205,10 @@ header{
 
                         @include ab.breakpoint(desktop){
                             font-size: 1rem;
+                        }
+
+                        @include ab.breakpoint(tablet-horizontal){
+                            font-size: 0.9rem;
                         }
                     
                         &:hover{
@@ -112,12 +230,18 @@ header{
                             }
                             
                             @include ab.breakpoint(desktop){
-                                max-width: 10%;
+                                max-width: 25%;
+                            }
+
+                            @include ab.breakpoint(tablet-horizontal){
+                                max-width: 35%;
                             }
 
                             @include ab.breakpoint(tablet){
-                                max-width: 34%;
+                                max-width: 26%;
                             }
+
+                            
 
                             @include ab.breakpoint(mobile-l){
                                 max-width: 30%;
@@ -132,8 +256,8 @@ header{
             }
         }
 
-                //responsive para el navbar
-         @media screen and (max-width: 425px){
+        //responsive para el navbar 768px
+        @media screen and (max-width: 768px){
              
             button.menu_button{
                 display: block;
@@ -157,13 +281,18 @@ header{
                 align-items: end;
                 gap: 1rem;
                 position: absolute;
-                top: 85px;
-                left: 292px;
+                top: 83px;
+                left: 626px;
                 padding: 16px;
                 background: #ffffff;
                 background: linear-gradient(134deg, rgba(255, 255, 255, 0.71) 100%, rgba(184, 223, 165, 0.96) 100%);
                 border-radius: 0 0 8px 8px;
-                z-index: 1;
+                z-index: 2;
+
+                @include ab.breakpoint(mobile-l){
+                    top: 81px;
+                    left: 293px;
+                }
 
 
 
@@ -185,87 +314,6 @@ header{
 
         picture img{
             max-width: 1905px;
-        }
-        
-        div.hero_title{
-            position: absolute;
-            top: 256px;
-            left: 78px;
-
-            @include ab.breakpoint(tablet-horizontal){
-                top: 159px;
-                left: 35px;
-            }
-
-            @include ab.breakpoint(tablet){
-                top: 138px;
-                left: 36px;
-            }
-
-            @include ab.breakpoint(mobile-l){
-                top: 20px;
-                left: 136px;
-            }
-
-            h1{
-                font-size: 4rem;
-                font-weight: 800;
-                text-transform: uppercase;
-                font-family: "Poppins", sans-serif;
-                color: ab.$orange;
-                letter-spacing: 5px;
-                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
-                span{
-                    font-size: 2rem;
-                }
-
-                @include ab.breakpoint(desktop){
-                    font-size: 3rem;
-                    span{
-                        font-size: 1.5rem;
-                    }
-                }
-
-                @include ab.breakpoint(tablet){
-                    font-size: 2rem;
-                    margin-bottom: 1rem;
-                    span{
-                        font-size: 1rem;
-                    }
-                }
-
-                @include ab.breakpoint(mobile-l){
-                    font-size: 1.2rem;
-                    margin-bottom: 0.5rem;
-                    letter-spacing: 1px;
-                    span{
-                        font-size: 0.5rem;
-                    }
-                }               
-            }
-
-            p{
-                font-family: "Roboto", sans-serif;
-                font-size: 2rem;
-                color: ab.$gray;
-                font-style: italic;
-                font-weight: 700;
-                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
-                text-align: center;
-                position: relative;
-                top: -15px;
-
-                @include ab.breakpoint(desktop){
-                    font-size: 1.25rem;
-                    text-align: left;
-                }
-
-                @include ab.breakpoint(mobile-l){
-                    font-size: 0.8rem;
-                    text-align: left;
-                    color: ab.$gray_2;
-                }
-            }
         }
     }
 }
@@ -987,7 +1035,6 @@ footer{
         }
 
         @include ab.breakpoint(mobile-l){
-            
             max-width: 100%;
             gap: 0.7rem;
             top: 6413px;
@@ -1201,22 +1248,18 @@ footer{
             img{
                 max-width: 30%;
                 border-radius: 80px;
-                position: relative;
-                left: 158px;
+                
                 @include ab.breakpoint(desktop){
-                    left: 91px;
                     max-width: 45%;  
                 }
-                @include ab.breakpoint(tablet-horizontal){
-                    left: 88px;    
-                }
+                
                  @include ab.breakpoint(tablet){
-                    left: 176px;
+                   
                     max-width: 30%;    
                 }
                 
                 @include ab.breakpoint(mobile-l){
-                    left: 90px;
+                    
                     max-width: 50%;  
                    
                 }    
@@ -1372,16 +1415,16 @@ footer{
 
     }
     p.diseño{
-            color: #666666;
-            text-align: center;
-            padding: 0.5rem;
-            span{
-                background: linear-gradient(65deg,rgba(246, 128, 25, 1) 0%, rgba(242, 242, 242, 0.78) 72%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 700;
-                
-            }
+        color: #666666;
+        text-align: center;
+        padding: 0.5rem;
+        span{
+            background: linear-gradient(65deg,rgba(246, 128, 25, 1) 0%, rgba(242, 242, 242, 0.78) 72%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            
         }
+    }
      
 }
