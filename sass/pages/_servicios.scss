@@ -24,6 +24,12 @@ main.servicios_main{
             font-size: 2rem;
             padding: 4rem 2rem 2rem;
         }
+
+        @include ab.breakpoint(mobile-l){
+            padding: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
     }
 
     section.servicios_servicios_container{
@@ -47,6 +53,13 @@ main.servicios_main{
                 padding-right: 4rem;
             }
 
+            @include ab.breakpoint(mobile-l){
+                max-width: 100%;
+                padding: 2rem;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
             picture img{
                 box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
                 @include ab.breakpoint(desktop){
@@ -55,8 +68,11 @@ main.servicios_main{
                 
                 @include ab.breakpoint(tablet){
                     max-width: 120%;
-                }   
+                }
 
+                @include ab.breakpoint(mobile-l){
+                    max-width: 100%;
+                }                                
             }
 
             div.sercicios_page_text_container{
@@ -88,6 +104,11 @@ main.servicios_main{
                         left: 34px;
                         top: -3px;
                     }
+
+                    @include ab.breakpoint(mobile-l){
+                        left: 0px;
+                        top: -4px;
+                    }
                 }
 
                 h2{
@@ -97,6 +118,10 @@ main.servicios_main{
                     text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
                     @include ab.breakpoint(tablet){
                         font-size: 1.5rem;
+                    }
+
+                    @include ab.breakpoint(mobile-l){
+                        text-align: center;
                     }
                 }
 
@@ -123,6 +148,11 @@ main.servicios_main{
                         left: -34px;
                         z-index: 0;
                     }
+
+                    @include ab.breakpoint(mobile-l){
+                        left: 0;
+                    }
+                    
                 }
             }
 
@@ -130,6 +160,10 @@ main.servicios_main{
                 background-color: ab.$orange;
                 @include ab.breakpoint(tablet-horizontal){
                     padding-right: 64px;
+                }
+
+                @include ab.breakpoint(mobile-l){
+                    padding-right: 2rem;
                 }
               
                 picture.terrestre_picture{
@@ -151,6 +185,10 @@ main.servicios_main{
                     padding-right: 64px;
                 }
                 
+                @include ab.breakpoint(mobile-l){
+                    padding-right: 2rem;
+                }
+
                 picture.especiales_picture{
                     position: relative;
                     left: 100px;
