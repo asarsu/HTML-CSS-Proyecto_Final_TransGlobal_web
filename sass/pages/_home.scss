@@ -86,6 +86,11 @@ header{
                 left: 136px;
             }
 
+            @include ab.breakpoint(mobile-m){
+                top: 16px;
+                left: 108px;
+            }
+
             h1{
                 font-size: 2rem;
                 font-weight: 800;
@@ -293,6 +298,12 @@ header{
                     top: 81px;
                     left: 293px;
                 }
+
+                @include ab.breakpoint(mobile-m){
+                    top: 76px;
+                    left: 247px;
+                }
+
 
 
 
