@@ -9,20 +9,21 @@
 
 main.servicios_main{
     background-color: ab.$gray;
-    border-top: 0.5rem solid ab.$orange;
+    
     
     h1{
         padding: 4rem;
         font-family: "Poppins", sans-serif;
         font-size: 4rem;
         color: ab.$orange;
-        text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+        
         @include ab.breakpoint(desktop){
-            font-size: 3rem;
+            font-size: 2.5rem;
+            padding: 2rem;
         }
         @include ab.breakpoint(tablet-horizontal){
             font-size: 2rem;
-            padding: 4rem 2rem 2rem;
+            padding: 1rem 2rem 1rem;
         }
 
         @include ab.breakpoint(mobile-l){
@@ -94,7 +95,7 @@ main.servicios_main{
 
                      @include ab.breakpoint(tablet){
                         left: 0;
-                        z-index: 1;                   
+                        z-index: 0;                   
                     }
                 }
 
@@ -115,7 +116,7 @@ main.servicios_main{
                     font-family: "Roboto", sans-serif;
                     color: ab.$orange;
                     font-size: 2rem;
-                    text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
+                    
                     @include ab.breakpoint(tablet){
                         font-size: 1.5rem;
                     }

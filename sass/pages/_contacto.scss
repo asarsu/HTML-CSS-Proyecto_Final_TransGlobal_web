@@ -7,11 +7,14 @@
 @use '../settings';
 
 main.main_contacto{
-    background-color: ab.$orange;
-    padding: 0 0 4rem;
+    background-image: url(../../img/pictures/footer_pics/containers_wall_1920x1130.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0 0 2rem;
 
     @include ab.breakpoint(tablet){
         padding: 2rem;
+        margin-top: 7px;
     }
 
     @include ab.breakpoint(mobile-l){
@@ -21,10 +24,11 @@ main.main_contacto{
     div.hero_footer{
        
         display: flex;
-        flex-direction: column;
+        
         gap: 2rem;
-        max-width: 40%;
-        justify-self: center;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
         padding: 4rem;
        
         @include ab.breakpoint(desktop){
@@ -36,13 +40,14 @@ main.main_contacto{
         @include ab.breakpoint(tablet-horizontal){
             max-width: 87%;
             flex-direction: row;
-            align-items: center;  
+            align-items: center;
+            justify-self: center;  
         }
 
         @include ab.breakpoint(tablet){
            padding: 0rem;
            display: flex;
-           flex-direction: column; 
+           max-width: 100%; 
         }
 
         @include ab.breakpoint(mobile-l){
@@ -66,12 +71,19 @@ main.main_contacto{
             opacity:  0.8;
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
+            max-width: 30%;
             @include ab.breakpoint(desktop){
                 font-size: 1.25rem;
             }
             @include ab.breakpoint(tablet-horizontal){
                 font-size: 1rem;
             }
+
+            @include ab.breakpoint(tablet){
+                max-width: 42%
+            }
+                
+
             @include ab.breakpoint(mobile-l){
                 max-width: 100%;
                 font-size: 0.8rem;
@@ -84,6 +96,19 @@ main.main_contacto{
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
             opacity: 0.8;
+
+
+            @include ab.breakpoint(tablet){
+                gap: 0.5rem;
+                padding: 1rem;
+                max-width: 100%;
+                flex-direction: column;
+                
+                
+                #mensaje{
+                    width: 100%;
+                }
+            }
 
             @include ab.breakpoint(mobile-l){
                 gap: 0.5rem;
@@ -144,7 +169,7 @@ main.main_contacto{
 
     section.contacto_container{
         padding: 2rem;
-        margin: 2rem 4rem;
+        margin: 2rem 19rem;
         display: flex;
         flex-direction: column;
         justify-self: stretch;
@@ -152,6 +177,11 @@ main.main_contacto{
         gap: 2rem;
         background-color: ab.$gray_2;
         box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
+
+        @include ab.breakpoint(desktop){
+            margin: 2rem 4rem;
+            
+        }
 
         @include ab.breakpoint(tablet){
             margin: 2rem 1rem;

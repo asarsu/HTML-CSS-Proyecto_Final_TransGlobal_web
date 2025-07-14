@@ -10,15 +10,40 @@
 
 //header
 header{
-       
+   background-image: url(../../img/deco/rectangle_orange.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: -2px 125px;
+   position: sticky;
+   z-index: 1;
+   top: 0;
+   background-color: whitesmoke;
+
+   @include ab.breakpoint(desktop){        
+        background-position: 0px 103px;        
+    }
+
+    @include ab.breakpoint(tablet-horizontal){        
+        background-position: 0px 91px;      
+    }
+
+    @include ab.breakpoint(tablet){        
+        background-position: 0px 75px;      
+    }
+
+    @include ab.breakpoint(mobile-m){        
+        background-position: 0px 69px;      
+    }
+ 
     div.header_container{
         padding: 16px 64px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         gap: 800px;
-        border-bottom: 0.75rem solid ab.$gray_2;
-
+        border-bottom: 0.5rem solid ab.$gray_2;
+       
+                      
         @include ab.breakpoint(desktop){
             padding: 16px 32px;
             gap: 40rem;
@@ -98,7 +123,7 @@ header{
                 font-family: "Poppins", sans-serif;
                 color: ab.$orange;
                 letter-spacing: 5px;
-                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+                
                 span{
                     font-size: 2rem;
                 }
@@ -141,9 +166,8 @@ header{
                 font-size: 1.5rem;
                 color: ab.$gray_2;
                 font-style: italic;
-                font-weight: 700;
-                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
-                text-align: center;
+                font-weight: 700;                
+                text-align: left;
                 position: relative;
                 top: -15px;
 
@@ -202,7 +226,10 @@ header{
 
                 li{
                     a{
-                        text-decoration: none;
+                        text-decoration: underline;
+                        text-decoration-thickness: 2px;
+                        text-decoration-color: ab.$orange;
+                        text-underline-offset: 5px;
                         font-size: 1.25rem;
                         font-family: "Assistant", sans-serif;
                         color: ab.$gray_2;
@@ -217,6 +244,7 @@ header{
                         }
                     
                         &:hover{
+                            color: ab.$orange;
                             text-decoration: underline;
                             text-decoration-color: ab.$orange;
                             text-decoration-thickness: 3px;
@@ -320,24 +348,18 @@ header{
          }
     }
 
-    div.hero_container{
-        border-top: 0.5rem solid ab.$orange;
-
-        picture img{
-            max-width: 1905px;
-        }
-    }
+    
 }
 
 main.index_main{
    
-    padding-top: 96px;
+    
     @include ab.breakpoint(desktop){
-        padding-top: 4rem;
+        padding-top: 0;
     }
 
     @include ab.breakpoint(tablet-horizontal){
-        padding-top: 2rem;
+        padding-top: 0;
     }
 
     @include ab.breakpoint(tablet){
@@ -364,6 +386,16 @@ main.index_main{
              }
 
         }
+
+    div.hero_container{
+        padding-bottom: 4rem;
+        
+
+        picture img{
+            max-width: 1905px;
+            margin-top: 0.5rem;
+        }
+    }
 
     div.services_container{
         display: grid;
@@ -720,12 +752,18 @@ main.index_main{
 
     section.call_action{
         border-top: 6px solid white;
-        background-image: url(../../img/pictures/call_action_form/camion_back3_425x638.jpg);
-        background-repeat: no-repeat;
+        
+        @include ab.breakpoint(mobile-l){
+            background-image: url(../../img/pictures/call_action_form/camion_back3_425x638.jpg);
+            background-repeat: no-repeat;
+        }
+        
+        
         
 
         picture{
             img{
+                
                 filter: grayscale(70%);
                 max-width: 1905px;
                 @include ab.breakpoint(mobile-l){
@@ -741,7 +779,8 @@ main.index_main{
             gap: 4rem;
             max-width: 70%;
             position: absolute;
-            top: 3104px;
+            
+            top: 3020px;
             left: 300px;
             align-items: center;
 
@@ -916,7 +955,9 @@ main.index_main{
             div.mision_text{
                 max-width: 25%;
                 box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
-                border: 5px solid white;
+                position: relative;
+                z-index: 0;
+                
 
                 @include ab.breakpoint(desktop){
                     max-width: 44%;
@@ -1013,7 +1054,7 @@ footer{
 
     div.hero_footer{
         position: absolute;
-        top: 5100px;
+        top: 5036px;
         left: 260px;
         display: grid;
         grid-template-columns: 1fr 1fr;

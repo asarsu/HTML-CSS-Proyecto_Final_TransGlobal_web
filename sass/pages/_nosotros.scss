@@ -33,7 +33,7 @@ div.hero_title{
         font-family: "Poppins", sans-serif;
         color: ab.$orange;
         letter-spacing: 5px;
-        text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+        
         span{
             font-size: 2rem;
         }
@@ -69,9 +69,8 @@ div.hero_title{
         font-size: 1.5rem;
         color: ab.$gray_2;
         font-style: italic;
-        font-weight: 700;
-        text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
-        text-align: center;
+        font-weight: 700;       
+        text-align: left;
         position: relative;
         top: -15px;
         @include ab.breakpoint(desktop){
@@ -91,7 +90,7 @@ div.hero_title{
 
 main.nosotros_main{
     background-color: ab.$gray;
-    border-top: 0.5rem solid ab.$orange;
+    
     
     @include ab.breakpoint(tablet){
         background-image: url(../../img/pictures/nosotros/puerto_768x529.jpg);
@@ -163,7 +162,7 @@ main.nosotros_main{
                 font-family: "Poppins", sans-serif;
                 color: ab.$orange;
                 font-size: 1.5rem;
-                text-shadow: -7px 3px 9px rgba(0,0,0,0.58);
+               
                 @include ab.breakpoint(tablet-horizontal){
                     text-align: center;
                 }
@@ -278,7 +277,7 @@ main.nosotros_main{
                 box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.4);
                 opacity: 0.9;
                 position: absolute;
-                top: 866px;
+                top: 827px;
             }
 
             @include ab.breakpoint(mobile-l){
@@ -348,6 +347,7 @@ main.nosotros_main{
             margin-left: 15rem;
             @include ab.breakpoint(desktop){
                 padding: 1.5rem;
+                margin-left: 8rem;
             }
 
             @include ab.breakpoint(tablet-horizontal){
@@ -392,6 +392,7 @@ main.nosotros_main{
 
             @include ab.breakpoint(desktop){
                 padding: 1.5rem;
+                margin-left: 16rem;
             }
             
             @include ab.breakpoint(tablet-horizontal){
@@ -486,10 +487,10 @@ main.nosotros_main{
                 font-family: "Roboto", sans-serif;
                 color: ab.$orange;
                 font-size: 1.5rem;
-                text-shadow: -7px 3px 9px rgba(0, 0, 0, 0.58);
+                
                 i{
                     color: ab.$gray_2;
-                    text-shadow: none;
+                    
                     font-size: 2rem;
                     @include ab.breakpoint(tablet){
                         color: ab.$orange;
