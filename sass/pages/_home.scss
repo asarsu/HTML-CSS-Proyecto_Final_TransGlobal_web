@@ -17,8 +17,9 @@ header{
    position: sticky;
    z-index: 1;
    top: 0;
-   background-color: whitesmoke;
-
+   background-color: ab.$gray;
+   margin-bottom: 10px;
+   
    @include ab.breakpoint(desktop){        
         background-position: 0px 103px;        
     }
@@ -122,7 +123,7 @@ header{
                 text-transform: uppercase;
                 font-family: "Poppins", sans-serif;
                 color: ab.$orange;
-                letter-spacing: 5px;
+                letter-spacing: 0px;
                 
                 span{
                     font-size: 2rem;
@@ -332,9 +333,6 @@ header{
                     left: 247px;
                 }
 
-
-
-
                 ul{
                     flex-direction: column;
                     align-items: end;
@@ -352,8 +350,7 @@ header{
 }
 
 main.index_main{
-   
-    
+       
     @include ab.breakpoint(desktop){
         padding-top: 0;
     }
@@ -370,7 +367,7 @@ main.index_main{
             content: "";
              background-color: ab.$orange;
              position: absolute;
-             top: 1180px;
+             top: 1265px;
              bottom: 0px;
              right: 0px;
              width: 100%;
@@ -378,7 +375,7 @@ main.index_main{
              z-index: -1;
 
              @include ab.breakpoint(desktop){
-                 top: 907px;
+                 top: 955px;
              }
 
              @include ab.breakpoint(tablet-horizontal){
@@ -387,13 +384,56 @@ main.index_main{
 
         }
 
-    div.hero_container{
-        padding-bottom: 4rem;
+    div.slideshow-container{
+        padding-bottom: 6rem;
+                
+        /* Slideshow container */       
+          max-width: 100%;
+          position: relative;
+
+        @include ab.breakpoint(desktop){
+            padding-bottom: 3rem;
+        }
+
+        @include ab.breakpoint(tablet-horizontal){
+            padding-bottom: 2rem;
+        }
+          
+        
+        /* The dots/bullets/indicators */
+        div.dots_container{
+            position: relative;
+            top: -41px;
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
         
 
-        picture img{
-            max-width: 1905px;
-            margin-top: 0.5rem;
+            .active {
+            background-color: #717171;
+            }
+        }
+
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 3s;
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
         }
     }
 
@@ -411,7 +451,7 @@ main.index_main{
         }
 
         @include ab.breakpoint(tablet-horizontal){
-            max-width: 92%;
+            max-width: 93%;
             padding-bottom: 2rem;
         }
 
@@ -510,16 +550,23 @@ main.index_main{
 
     div.nosotros_container{
         display: flex;
-        justify-content: center;
+        justify-content: stretch;
         align-items: center;
         background-color: ab.$gray;
-        gap: 4rem;
+        gap: 10rem;
         padding: 4rem;
+        margin: 0 14rem 4rem;
+
+        @include ab.breakpoint(desktop){
+            margin: 0 7rem;
+            gap: 5rem;
+        }
         
         @include ab.breakpoint(tablet-horizontal){
             padding: 2rem;
             justify-content: space-evenly;
-            gap: 2rem;
+            gap: 8rem;
+            margin: 0 2rem;
         }
 
          @include ab.breakpoint(mobile-l){
@@ -533,8 +580,9 @@ main.index_main{
         div.text_nosotros_container{
              display: flex;
              flex-direction: column;
-             max-width: 30%;
+             max-width: 49%;
              gap: 4rem;
+             margin-left: 60px;
 
              @include ab.breakpoint(desktop){
                 gap: 1rem;
@@ -572,6 +620,10 @@ main.index_main{
                 }
 
                 @include ab.breakpoint(desktop){
+                    font-size: 1.2rem;
+                }
+
+                @include ab.breakpoint(tablet-horizontal){
                     font-size: 1rem;
                 }
                 
@@ -595,7 +647,10 @@ main.index_main{
                 }
 
                 img{
-                    max-width: 100%;
+                    max-width: 150%;
+                    @include ab.breakpoint(tablet-horizontal){
+                        max-width: 100%;
+                    }
                 }
             }
 
@@ -608,10 +663,16 @@ main.index_main{
         justify-content: center;
         gap: 4rem;
         padding-bottom: 4rem;
+        margin: 0 14rem;
+
+        @include ab.breakpoint(desktop){
+            margin:0 7rem;
+        }
 
         @include ab.breakpoint(tablet-horizontal){
             padding-bottom: 2rem;
             gap: 7.5rem;
+            margin:0 2rem;
         }
 
         @include ab.breakpoint(tablet){
@@ -683,9 +744,15 @@ main.index_main{
     div.servicios_independientes{
         background-color: #666666;
         padding: 4rem;
+        margin: 6rem 14rem;
+
+        @include ab.breakpoint(desktop){
+            margin: 4rem 7rem;            
+        }
 
         @include ab.breakpoint(tablet-horizontal){
             padding: 2rem;
+            margin: 2rem;
         }
         
 
@@ -693,7 +760,11 @@ main.index_main{
             display: flex; 
             justify-content: center;
             align-items: center;
-            gap: 4rem;
+            gap: 12rem;
+
+            @include ab.breakpoint(tablet-horizontal){
+                gap: 6rem;
+            }
 
             @include ab.breakpoint(mobile-l){
                 flex-direction: column;
@@ -702,7 +773,11 @@ main.index_main{
             
             picture{
                 max-width: 20%;
-                
+
+                @include ab.breakpoint(desktop){
+                    max-width: 30%;
+                }
+
                 @include ab.breakpoint(tablet-horizontal){
                     max-width: 25%;
                 }
@@ -726,8 +801,9 @@ main.index_main{
                 gap: 2rem;
 
                 @include ab.breakpoint(desktop){
-                    gap: 1rem;
+                    gap: 1rem;                   
                 }
+                
                 li{
                     display: flex;
                     gap: 1rem;
@@ -742,7 +818,7 @@ main.index_main{
                         font-size: 1.25rem;
                         font-weight: 200;
                         @include ab.breakpoint(desktop){
-                            font-size: 1rem;
+                            font-size: 1.2rem;
                         }
                     }
                 }
@@ -752,50 +828,35 @@ main.index_main{
 
     section.call_action{
         border-top: 6px solid white;
+        background-image: url(../../img/pictures/call_action_form/camion_back_1920x509.jpg);
+        background-repeat: no-repeat;
+        
+        @include ab.breakpoint(tablet-horizontal){
+            background-position-x: -313px;
+        }
         
         @include ab.breakpoint(mobile-l){
             background-image: url(../../img/pictures/call_action_form/camion_back3_425x638.jpg);
             background-repeat: no-repeat;
-        }
-        
-        
-        
-
-        picture{
-            img{
-                
-                filter: grayscale(70%);
-                max-width: 1905px;
-                @include ab.breakpoint(mobile-l){
-                    filter: none;
-                    display: none;
-                }
-            }            
-        }
+        }               
 
         div.call_action_text_container{
-            padding: 4rem;
+            padding: 10rem 0 8rem;
             display: flex;
             gap: 4rem;
-            max-width: 70%;
-            position: absolute;
-            
-            top: 3020px;
-            left: 300px;
+            max-width: 70%;           
             align-items: center;
+            justify-self: center;
 
-            @include ab.breakpoint(desktop){
-                top: 2547px;
-                left: 151px;
-                max-width: 80%;
-                padding: 1rem;  
+            @include ab.breakpoint(desktop){                
+                max-width: 85%;
+                padding: 11rem 0 7rem;  
             }
 
             @include ab.breakpoint(tablet-horizontal){
-                top: 2080px;
-                left: 85px;
+               
                 max-width: 83%;
-                padding: 0;                
+                padding: 12rem 0 4rem;                
             }
 
             @include ab.breakpoint(tablet){
@@ -884,6 +945,7 @@ main.index_main{
                     font-size: 2rem;
                     font-weight: 600;
                     font-style: italic;
+                    text-align: center;
                     @include ab.breakpoint(tablet-horizontal){
                         font-size: 1.5rem;
                         text-align: center;
@@ -923,11 +985,17 @@ main.index_main{
     }
 
     section.mision_vision{
-        background-color: white;
-        padding: 6rem;
+        background-color: whitesmoke;
+        padding: 6rem 0;
+        margin: 6rem 14rem;
+
+        @include ab.breakpoint(desktop){
+            margin: 4rem 7rem;
+        }
 
         @include ab.breakpoint(tablet-horizontal){
-            padding: 2rem 4rem;
+            margin: 2rem;
+            padding: 2rem;
         }
 
         @include ab.breakpoint(tablet){
@@ -944,7 +1012,7 @@ main.index_main{
             align-items: center;
             justify-content: center;
             @include ab.breakpoint(tablet-horizontal){
-                gap: 7rem;                               
+                gap: 3rem;                               
             }
             @include ab.breakpoint(mobile-l){
                 flex-direction: column;
@@ -953,7 +1021,7 @@ main.index_main{
             }
 
             div.mision_text{
-                max-width: 25%;
+                max-width: 35%;
                 box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
                 position: relative;
                 z-index: 0;
@@ -976,7 +1044,7 @@ main.index_main{
                 
                 &.vision{
                     position: relative;
-                    left: 132px;
+                    left: 90px;
                     @include ab.breakpoint(mobile-l){
                         left: 0;
                     }
@@ -985,7 +1053,7 @@ main.index_main{
                 
                 &.mision{
                     position: relative;
-                    left: -132px;
+                    left: -90px;
                     @include ab.breakpoint(mobile-l){
                         left: 0;
                     }
@@ -1009,13 +1077,17 @@ main.index_main{
                     color: ab.$gray;
                     font-family: "Assistant", sans-serif;
                     text-wrap: wrap;
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     font-weight: 300;
                     text-align: center;
                     background-color: ab.$gray_2;
                     padding: 2rem;
                     @include ab.breakpoint(desktop){
-                        padding: 0.5rem;
+                        padding: 2rem;                        
+                    }
+
+                    @include ab.breakpoint(tablet-horizontal){
+                        font-size: 1rem;
                     }
                 }
                 
@@ -1024,8 +1096,13 @@ main.index_main{
             img{
                 max-width: 25%;
                 box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
+
+                @include ab.breakpoint(desktop){
+                    max-width: 35%;
+                }
+
                 @include ab.breakpoint(tablet-horizontal){
-                    max-width: 30%;
+                    max-width: 45%;
                 }
                 @include ab.breakpoint(mobile-l){
                     max-width: 100%;
@@ -1038,7 +1115,7 @@ main.index_main{
 }
 
 footer{
-    background-color: ab.$gray_2;
+    background-color: rgb(29, 29, 29);
    
 
     img{
@@ -1053,28 +1130,25 @@ footer{
     
 
     div.hero_footer{
-        position: absolute;
-        top: 5036px;
-        left: 260px;
+        
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 6rem;
-        padding: 0 6rem ;
-        max-width: 75%;
-        justify-self: center;
+        gap: 0rem;
+        padding: 6rem 6rem ;
+        max-width: 100%;
+        justify-items: center;
         align-items: center;
+        background-image: url(../../img/pictures/footer_pics/containers_wall_1920x1130.jpg);
+        background-repeat: no-repeat;
 
-        @include ab.breakpoint(desktop){
-            top: 4029px;
-            left: 151px;
-            padding: 0;;
+        @include ab.breakpoint(desktop){            
+            padding: 4rem;
         }
 
-        @include ab.breakpoint(tablet-horizontal){
-            top: 3181px;
-            left: 48px;
-            padding: 0;
-            max-width: 90%;
+        @include ab.breakpoint(tablet-horizontal){           
+            padding: 2rem;
+            justify-items: left;
+            
         }
 
         @include ab.breakpoint(tablet){
@@ -1094,7 +1168,7 @@ footer{
             position: relative;
             top: 0;
             flex-direction: column;
-             background-image: url(../../img/pictures/footer_pics/containers_wall_425x616.jpg);
+            
         }
 
         p.message{
@@ -1107,6 +1181,7 @@ footer{
             opacity:  0.8;
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
+            max-width: 71%;
             @include ab.breakpoint(desktop){
                 font-size: 1.25rem;
             }
@@ -1125,13 +1200,15 @@ footer{
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
             opacity: 0.8;
+            max-width: 71%;
 
             @include ab.breakpoint(tablet-horizontal){
-                max-height: 91%;
-                display: flex;
+               
+                max-width: 100%;
+                display: grid;
                 flex-wrap: wrap;
                 gap: 0.5rem;
-                justify-content: space-evenly;
+                justify-content: center;
 
                 #mensaje{
                     height: 70%;
@@ -1220,6 +1297,7 @@ footer{
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         padding: 3rem;
+        border-top: solid ab.$orange 5px;
         @include ab.breakpoint(desktop){
            align-items: center;
         }

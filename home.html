@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Trans Global S.r.l.</title>
+    <title>Trans Global LLC | Home</title>
   </head>
 
   <body>
@@ -14,7 +14,21 @@
           <img src="img/logos/logo_sin_fondo_exterior.png" alt="Logo transGlobal">
         </picture>
 
-        <nav class="menu">
+        <div class="hero_title">
+          <h1>Trans Global <span>LLC</span></h1>
+          <p>No coincidence — just outstanding service</p>
+        </div>
+
+        <button class="menu_button" id="menu_button">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="menu" id="menu">
+
+          <button class="close_button" id="close_button">
+            <i class="bi bi-x-square"></i>
+          </button>
+
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="nosotros.html">About</a></li>
@@ -31,117 +45,190 @@
         </nav>
       </div>
 
-      <div class="hero_container">
-        <picture>
-          <source media="(min-width:1920px)" srcset="./img/pictures/container_castle/barco_up_1920x850.jpg" loading="lazy">
-          <source media="(min-width:1440px)" srcset="/img/pictures/container_castle/barco_up_1440x638.jpg" loading="lazy">
-          <source media="(min-width:1336px)" srcset="/img/pictures/container_castle/barco_up_1336x591.jpg" loading="lazy">
-          <source media="(min-width:1024px)" srcset="/img/pictures/container_castle/barco_up_1024x453.jpg" loading="lazy">
-          <source media="(min-width:768px)" srcset="/img/pictures/container_castle/barco_up_768x340.jpg" loading="lazy">
-          <source media="(min-width:720px)" srcset="/img/pictures/container_castle/barco_up_720x319.jpg" loading="lazy">
-          <img src="./img/pictures/container_castle/barco_up_375x166.jpg" alt="hero_img_375" loading="lazy">
-        </picture>
-
-        <div class="hero_title">
-          <h1>Trans Global <span>S.R.L.</span></h1>
-          <p>No coincidence — just outstanding service...</p>
-        </div>
-        </div>
+     
     </header>
 
     <main class="index_main">
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">          
+          <img src="img/pictures/container_castle/slide_1-7.jpg" style="width:100%">          
+        </div>
+
+        <div class="mySlides fade">          
+          <img src="img/pictures/container_castle/slide_2-7.jpg" style="width:100%">        
+        </div>
+
+        <div class="mySlides fade">          
+          <img src="img/pictures/container_castle/slide_3-7.jpg" style="width:100%">          
+        </div>
+
+        <div class="mySlides fade">          
+          <img src="img/pictures/container_castle/slide_4-7.jpg" style="width:100%">          
+        </div>
+
+        <div class="mySlides fade">          
+          <img src="img/pictures/container_castle/slide_5-7.jpg" style="width:100%">          
+        </div>
+
+        <div class="mySlides fade">          
+          <img src="img/pictures/container_castle/slide_6-7.jpg" style="width:100%">          
+        </div>
+
+        <div class="mySlides fade">          
+          <img src="img/pictures/container_castle/slide_7-7.jpg" style="width:100%">          
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span>   
+        </div>
+
+       
+      </div>
+
       <div class="services_container">
 
         <article class="services maritimo">
+
           <picture>
             <img src="img/pictures/services/services_maritmo.jpg" alt="">
           </picture>
 
           <div class="services_text_container">
             <h2>Maritime Transport</h2>
-            <p>Wide range of services in all ports worldwide for the benefit and convenience of our clients...</p>
-            <button><a href="services.html#serv_maritimo">More information</a></button>
+            <p>A wide range of services at ports worldwide for the benefit and convenience of our clients...</p>
+            <button><a href="servicios.html#serv_maritimo">More Information</a></button>
           </div>
+
         </article>
         
         <article class="services terrestre">
+
           <picture>
             <img src="img/pictures/services/services_terrestre.jpg" alt=""> 
           </picture>
 
            <div class="services_text_container">
-            <h2>Land Transport</h2>
-            <p>We base our land transport service on safety, punctuality, and constant cargo control...</p>
-            <button><a href="services.html#serv_terrestre">More information</a></button>
+            <h2>Ground Transportation</h2>
+            <p>We base our ground service on safety, punctuality, and constant control of the cargo at all times...</p>
+            <button><a href="servicios.html#serv_terrestre">More information</a></button>
           </div>
-        </article>
+
+          </article>
 
         <article class="services aereo">
+
           <picture>
             <img src="img/pictures/services/services_aereo.jpg" alt=""> 
           </picture>
 
           <div class="services_text_container">
             <h2>Air Transport</h2>
-            <p>Air cargo consolidation and deconsolidation to and from anywhere in the world, with storage facilities...</p>
-            <button><a href="services.html#serv_aereo">More information</a></button>
+            <p>Consolidation and deconsolidation of air cargo to and from any part of the world, along with storage facilities...</p>
+            <button><a href="servicios.html#serv_aereo">More information</a></button>
           </div>
-        </article>
+          
+          </article>
 
         <article class="services especial">
-          <picture>
+
+           <picture>
             <img src="img/pictures/services/services_especiales.jpg" alt=""> 
           </picture>
 
            <div class="services_text_container">
             <h2>Special Projects</h2>
-            <p>Comprehensive management, transportation, and customized logistics for projects as required by our clients...</p>
-            <button><a href="services.html#serv_especiales">More information</a></button>
+            <p>Comprehensive management, transportation, and customized logistics for projects according to our clients’ requirements...</p>
+            <button><a href="servicios.html#serv_especiales">Más informacíon</a></button>
           </div>
+        
         </article>
       </div>
 
       <div class="nosotros_container">
+        
         <div class="text_nosotros_container">
-          <h2>About Us</h2>
-          <p>We are a company dedicated to international transport logistics. With over 30 years of experience, we are proud to have become one of the most prestigious companies in the national market and internationally recognized for our expertise and professional knowledge, which allows us to provide our clients with efficient support tailored to the changing needs of the market...<span><a href="about.html">more information</a></span></p>
+          <h2>About US</h2>
+          
+          <p>We are a company dedicated to international transport logistics, with over 30 years of experience. We are proud to say that we have become one of the most prestigious companies in the national market and are internationally recognized for our expertise and professional knowledge, which enable us to provide our clients with efficient support tailored to the ever-changing needs of the market.<span><a href="nosotros.html">More Information...</a></span></p>
         </div>
 
+      
         <picture>
           <img src="img/pictures/nosotros/nosotros_img.jpg" alt="">
         </picture>
       </div>
 
       <div class="valores_container">
+
         <div class="valores calidad">
           <i class="bi bi-award-fill"></i>
           <h3>Quality</h3>
         </div>
+
         <div class="valores puntualidad">
           <i class="bi bi-clock-fill"></i>
           <h3>Punctuality</h3>
         </div>
+
         <div class="valores integridad">
           <i class="bi bi-sign-stop-lights-fill"></i>
           <h3>Integrity</h3>
         </div>
+
       </div>
 
       <div class="servicios_independientes">
         <div class="independientes_container">
           <picture>
-            <img src="img/pictures/independientes/servicios_independientes.jpg" alt="Container_wall (credits: Foto de Frans van Heerden: https://www.pexels.com/es-es/foto/lote-de-remolque-de-contenedores-de-carga-1624695/)">
+            <img src="img/pictures/independientes/plane_up404x720.jpg" alt="">
           </picture>
           
           <ul class="text_independientes">
-            <li><i class="bi bi-check-square"></i><p>National and international transport logistics.</p></li>
-            <li><i class="bi bi-check-square"></i><p>Cargo consolidation and deconsolidation.</p></li>
-            <li><i class="bi bi-check-square"></i><p>International maritime, land, and air transport.</p></li>
-            <li><i class="bi bi-check-square"></i><p>Customs procedures and documentation.</p></li>
-            <li><i class="bi bi-check-square"></i><p>Local and last mile transport.</p></li>
-            <li><i class="bi bi-check-square"></i><p>Secure warehousing services.</p></li>
-            <li><i class="bi bi-check-square"></i><p>Comprehensive coordination of logistics projects.</p></li>
+            <li>
+              <i class="bi bi-check-square"></i>
+              <p>National and international transportation logistics.</p>
+            </li>
+            
+            <li>
+              <i class="bi bi-check-square"></i>
+              <p>Cargo consolidation and deconsolidation.</p>
+            </li>
+            
+            <li>
+              <i class="bi bi-check-square"></i>
+              <p>International maritime, land, and air transport.<p>
+            </li>
+            
+            <li>
+              <i class="bi bi-check-square"></i>
+              <p>Customs procedures and documentation.</p>
+            </li>
+            
+            <li>
+              <i class="bi bi-check-square"></i>
+              <p>Local and last-mile transportation.</p>
+            </li>
+            
+            <li>
+              <i class="bi bi-check-square"></i>
+              <p>Secure warehousing services.</p>
+            </li>
+            
+            <li>
+              <i class="bi bi-check-square"></i>
+              <p>Comprehensive coordination of logistics projects.</p>
+            </li>
           </ul>
+        
         </div>
       </div>
 
@@ -152,107 +239,194 @@
           <source media="(min-width:1336px)" srcset="./img/pictures/call_action_form/camion_back_1336x354.jpg" loading="lazy">
           <source media="(min-width:1024px)" srcset="./img/pictures/call_action_form/camion_back_1024x271.jpg" loading="lazy">
           <source media="(min-width:768px)" srcset="./img/pictures/call_action_form/camion_back_768x204.jpg" loading="lazy">
-          <source media="(min-width:720px)" srcset="./img/pictures/call_action_form/camion_back_720x191.jpg" loading="lazy">
+           <source media="(min-width:425px)" srcset="./img/pictures/call_action_form/camion_back3_425x638.jpg" loading="lazy">
           <img src="img/pictures/call_action_form/camion_back_375x99.jpg" alt="">
         </picture>
 
         <div class="call_action_text_container">
+
           <div class="call_text_title">
-            <h2>Do you have a project and need logistics advice?</h2>
-            <p>Our goal is to advise you quickly and efficiently, offering specific, suitable solutions throughout your project's logistics process.</p>
+            <h2>
+              Do you have a project and need logistics guidance?
+            </h2>
+             <p>Our goal is to provide you with fast and efficient support, offering tailored, effective solutions throughout your project’s entire logistics process.</p>
+           
           </div>
 
           <div class="call_text_paragraph">
-            <h3>Get in touch with our Sales Team.</h3>
+            <h3>Speak with our Logistics Advisors.</h3>
             <button><a href="#">Contact Us</a></button>
           </div>
+
         </div>
       </section>
 
       <section class="mision_vision">
+
         <div class="mision_vision_text">
           <div class="mision_text vision">
             <h3>Our Vision</h3>
-            <p>We make transportation our calling and reason for being. Our vision is based on the professionalism of our team and a firm commitment to achieving our clients’ complete satisfaction. We aspire to be recognized as a reliable strategic partner, guided by values that prioritize operational excellence, integrity, and continuous improvement.</p>
+            <p>Transportation is our vocation and our purpose. Our vision is built on the professionalism of our team and a strong commitment to achieving complete customer satisfaction. We aspire to be recognized as a trusted strategic partner, guided by values that prioritize operational excellence, integrity, and continuous improvement.</p>
           </div>
-          <picture><img src="img/pictures/mision_vision/grua.jpg" alt="grua"></picture>
+          
+        
+          <img src="img/pictures/mision_vision/grua.jpg" alt="grua">
+          
         </div>
+        
         <div class="mision_vision_text">
-          <picture><img src="img/pictures/mision_vision/avion_cargo.jpg" alt="plane"></picture>
+         
+          <img src="img/pictures/mision_vision/avion_480x720.jpg" alt="plane">
+          
+
           <div class="mision_text mision">
             <h3>Our Mission</h3>
-            <p>To drive our clients’ business success through logistics services distinguished by speed, safety, reliability, and professional ethics. At Trans Global SRL, we handle each operation with responsibility and commitment, providing efficient solutions that strengthen the competitiveness of those who trust us.</p>
+            <p>To drive our clients’ business success through logistics services distinguished by speed, safety, reliability, and professional ethics. At Trans Global SRL, we approach every operation with responsibility and commitment, delivering efficient solutions that enhance the competitiveness of those who place their trust in us.</p>
           </div>
+          
         </div>
       </section>
+    
     </main>
 
-    <footer>
-      <picture>
-        <source media="(min-width:1920px)" srcset="./img/pictures/footer_pics/containers_wall_1920x700.jpg" loading="lazy">
-        <source media="(min-width:1440px)" srcset="./img/pictures/footer_pics/containers_wall_1440x525.jpg" loading="lazy">
-        <source media="(min-width:1336px)" srcset="./img/pictures/footer_pics/containers_wall_1336x487.jpg" loading="lazy">
-        <source media="(min-width:1024px)" srcset="./img/pictures/footer_pics/containers_wall_1024x373.jpg" loading="lazy">
-        <source media="(min-width:768px)" srcset="./img/pictures/footer_pics/containers_wall_768x280.jpg" loading="lazy">
-        <source media="(min-width:720px)" srcset="./img/pictures/footer_pics/containers_wall_720x263.jpg" loading="lazy">
-        <img src="img/pictures/footer_pics/containers_wall_375x137.jpg" alt="container_footer">
-      </picture>
-      
+     <footer>
+        <picture>
+          <source media="(min-width:1920px)" srcset="./img/pictures/footer_pics/containers_wall_1920x700.jpg" loading="lazy">
+          <source media="(min-width:1440px)" srcset="./img/pictures/footer_pics/containers_wall_1440x525.jpg" loading="lazy">
+          <source media="(min-width:1336px)" srcset="./img/pictures/footer_pics/containers_wall_1336x487.jpg" loading="lazy">
+          <source media="(min-width:1024px)" srcset="./img/pictures/footer_pics/containers_wall_1024x373.jpg" loading="lazy">
+          <source media="(min-width:768px)" srcset="./img/pictures/footer_pics/containers_wall_768x280.jpg" loading="lazy">
+           <source media="(min-width:425px)" srcset="./img/pictures/footer_pics/containers_wall_425x616.jpg" loading="lazy">
+          <img src="img/pictures/footer_pics/containers_wall_375x137.jpg" alt="container_footer">
+        </picture>
+        
+     
       <div class="hero_footer">
-        <p class="message">At Trans Global we know that communication is essential for proper logistics management with all our clients and business partners, which is why we offer you a quick way to contact our team.</p>
+
+        <p class="message">At Trans Global, we understand that communication is essential for effective logistics management with all our clients and business partners. That’s why we provide you with a fast and easy way to get in touch with our team.</p>
+
         <form action="#" method="get">
-          <div><p>Email</p><input type="email" name="email" id="email" placeholder="email&#64;example.com"></div>
-          <div><p>Name and Surname</p><input type="text" name="nombre" id="nombre" placeholder="Name Surname"></div>
-          <div><p>Phone</p><input type="tel" name="telefono" id="telefono" placeholder="+000 999-999-99"></div>
-          <div><p>Country</p><input type="text" name="pais" id="pais"></div>
-          <div><p>Message</p><textarea name="mensaje" id="mensaje" rows="6" cols="50"></textarea></div>
+          <div>
+            <p>Email</p>
+            <input type="email" name="email" id="email" placeholder="email&#64;example.com">
+          </div>
+          
+          <div>
+            <p>Name</p>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido">
+          </div>
+
+          <div>
+            <p>Phone</p>
+            <input type="tel" name="telefono" id="telefono" placeholder="+000 999-999-99">
+          </div>
+
+          <div>
+            <p>Country</p>
+            <input type="text" name="pais" id="pais">
+          </div>
+          
+          <div>
+            <p>Mesaje</p>
+            <textarea name="mensaje" id="mensaje" rows="6" cols="50"></textarea>
+          </div>
+
           <button>Send</button>
+          
+
         </form>
+        
       </div>
 
       <div class="derechos_container">
+
         <div class="derechos">
-          <picture><img src="img/logos/logo_sin_fondo_exterior.png" alt="logo32"></picture>
+                  
+         
+          <img class="logo" src="img/logos/logo_sin_fondo_exterior.png" alt="logo32">
+          
           <div class="rrss">
             <a href="https://www.facebook.com/TRANSGLOBALSRL?locale=es_LA" target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/transglobalsrl_official/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
-          <p class="copyright">Copyright © 2025 <span>Trans Global S.R.L.</span> All rights reserved.</p>
+
+          <p class="copyright">Copyright © 2025 <span>Trans Global LLC </span>All rights resreved.</p>
+          
         </div>
 
         <div class="paginas_footer">
+          
           <h4>Pages</h4>
           <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nosotros.html">About</a></li>
+            <li><a href="servicios.html">Services</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contacto.html">Contac</a></li>
           </ul>
         </div>
         
+        
         <div class="derechos_servicios">
           <h4>Services</h4>
-          <p><a href="servicios.html#serv_maritimo">Maritime Transport</a></p>
-          <p><a href="servicios.html#serv_terrestre">Land Transport</a></p>
-          <p><a href="servicios.html#serv_aereo">Air Transport</a></p>
-          <p><a href="servicios.html#serv_especiales">Special Projects</a></p>
+          <p><a href="servicios.html#serv_maritimo">Transporte Marítimo</a></p>
+          <p><a href="servicios.html#serv_terrestre">Transporte Terrestre</a></p>
+          <p><a href="servicios.html#serv_aereo">Transporte Aéreo</a></p>
+          <p><a href="servicios.html#serv_especiales">Proyectos Especiales</a></p>
         </div>
 
         <div class="direcciones">
-          <h4>Addresses</h4>
+          
+          <h4>Adresses</h4>
+          
           <div class="direcciones_container">
-            <div class="dir dir_lpz"><p><strong>La Paz</strong><br>Edif. El Zodiaco Piso 1 Of. 101 Calle 9 No.455 Zona Obrajes<br><strong>Tel.: </strong><br>(591-2) 2786701<br>(591-2) 2786881<br>(591-2) 2787430<br><strong>P.O. Box: </strong>3382<br><strong>Bolivia</strong></p></div>
-            <div class="dir dir_scz"><p><strong>Santa Cruz</strong><br>Edif. Tamaki PB Of.1 Calle Moldes esq. Cochabamba<br><strong>Tel.: </strong><br>(591-3) 3372539<br>(591-3) 3370506<br><strong>Bolivia</strong></p></div>
-            <div class="dir dir_cbb"><p><strong>Cochabamba</strong><br>Edif. Alhambra II PB B Calle Manchaypuito Zona Norte<br><strong>Tel.: </strong><br>(591) 79779422<br><strong>Bolivia</strong></p></div>
+            <div class="dir dir_lpz">
+              <p>
+                <strong>La Paz</strong>
+                <br>
+                Edif. El Zodiaco Piso 1 Of. 101 Calle 9 No.455 Zona Obrajes
+                <br>
+                <strong>Tel.: </strong> <br> (591-2) 2786701 <br> (591-2) 2786881 <br> (591-2) 2787430                
+                <br>
+                <strong>Bolivia</strong>
+              </p>
+            </div>
+
+            <div class="dir dir_scz">
+             <p>
+                <strong>Santa Cruz</strong>
+                <br>
+                Edif. Tamaki PB Of.1 Calle Moldes esq. Cochabamba
+                <br>
+                <strong>Tel.: </strong> <br> (591-3) 3372539 <br> (591-3) 3370506
+                <br>
+                <strong>Bolivia</strong>
+              </p>
+            </div>
+
+            <div class="dir dir_cbb">
+             <p>
+                <strong>Cochabamba</strong>
+                <br>
+                Edif. Alhambra II PB B Calle Manchaypuito Zona Norte 
+                <br>
+                <strong>Tel.: </strong> <br> (591) 79779422
+                <br>
+                <strong>Bolivia</strong>
+              </p>
+            </div>
           </div>
+          
         </div>
+
       </div>
 
-      <p class="diseño">design: <span>asarsu</span></p>
+      <P class="diseño">design: <span>asarsu</span></P>      
     </footer>
-
+    
+    
+    
     <script type="module" src="./main.js"></script>
   </body>
 </html>
