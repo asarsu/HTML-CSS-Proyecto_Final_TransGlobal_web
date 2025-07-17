@@ -15,7 +15,7 @@ header{
    background-size: cover;
    background-position: -2px 125px;
    position: sticky;
-   z-index: 1;
+   z-index: 2;
    top: 0;
    background-color: ab.$gray;
    margin-bottom: 10px;
@@ -569,6 +569,11 @@ main.index_main{
             margin: 0 2rem;
         }
 
+        @include ab.breakpoint(tablet){
+            gap: 0;
+            justify-content: space-between;          
+        }
+
          @include ab.breakpoint(mobile-l){
             padding: 2rem;
             flex-direction: column;
@@ -589,7 +594,13 @@ main.index_main{
              }
 
              @include ab.breakpoint(tablet-horizontal){
-                max-width: 46%;                
+                max-width: 46%;
+                              
+             }
+
+             @include ab.breakpoint(tablet){
+                max-width: 46%;
+                margin-left: 0;                               
              }
 
              @include ab.breakpoint(mobile-l){
@@ -642,6 +653,11 @@ main.index_main{
                     max-width: 25%;
                 }
 
+                @include ab.breakpoint(tablet){
+                    position: relative;
+                    left: -81px;
+                }
+
                 @include ab.breakpoint(mobile-l){
                     max-width: 100%;
                 }
@@ -650,6 +666,10 @@ main.index_main{
                     max-width: 150%;
                     @include ab.breakpoint(tablet-horizontal){
                         max-width: 100%;
+                    }
+
+                    @include ab.breakpoint(tablet){
+                        max-width: 150%;
                     }
                 }
             }
@@ -820,6 +840,9 @@ main.index_main{
                         @include ab.breakpoint(desktop){
                             font-size: 1.2rem;
                         }
+                        @include ab.breakpoint(tablet-horizontal){
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -833,6 +856,10 @@ main.index_main{
         
         @include ab.breakpoint(tablet-horizontal){
             background-position-x: -313px;
+        }
+
+        @include ab.breakpoint(tablet){
+            background-position-x: -521px;
         }
         
         @include ab.breakpoint(mobile-l){
@@ -860,10 +887,9 @@ main.index_main{
             }
 
             @include ab.breakpoint(tablet){
-                top: 2539px;
-                left: 70px;
-                max-width: 85%;
-                padding: 0;                
+                
+                max-width: 100%;
+                padding: 9rem 2rem 2rem;              
             }
 
             @include ab.breakpoint(mobile-l){
@@ -1000,6 +1026,9 @@ main.index_main{
 
         @include ab.breakpoint(tablet){
             padding: 2rem;
+             div:first-child{
+                    margin-bottom: 2rem;
+                }
         }
 
         @include ab.breakpoint(mobile-l){
@@ -1014,6 +1043,12 @@ main.index_main{
             @include ab.breakpoint(tablet-horizontal){
                 gap: 3rem;                               
             }
+
+            @include ab.breakpoint(tablet){
+                gap: 0;
+               
+            }
+
             @include ab.breakpoint(mobile-l){
                 flex-direction: column;
                 gap: 1rem;
@@ -1045,6 +1080,11 @@ main.index_main{
                 &.vision{
                     position: relative;
                     left: 90px;
+
+                    @include ab.breakpoint(tablet){
+                        left: 0;
+                    }
+
                     @include ab.breakpoint(mobile-l){
                         left: 0;
                     }
@@ -1054,6 +1094,10 @@ main.index_main{
                 &.mision{
                     position: relative;
                     left: -90px;
+
+                     @include ab.breakpoint(tablet){
+                        left: 0;
+                    }
                     @include ab.breakpoint(mobile-l){
                         left: 0;
                     }
@@ -1153,11 +1197,9 @@ footer{
 
         @include ab.breakpoint(tablet){
             display: flex;
-            flex-direction: row;
-            max-width: 92%;
-            gap: 1rem;
-            top: 3574px;
-            left: 28px;
+            flex-direction: row;        
+            gap: 2rem;
+            
         }
 
         @include ab.breakpoint(mobile-l){
@@ -1218,8 +1260,8 @@ footer{
             @include ab.breakpoint(tablet){
                 gap: 0.5rem;
                 padding: 1rem;
-                max-width: 97%;
-                justify-content: space-evenly;
+               
+                
             }
 
             @include ab.breakpoint(mobile-l){

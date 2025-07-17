@@ -15,6 +15,10 @@ main.servicios_main{
         margin: 4rem 7rem;
     }
 
+    @include ab.breakpoint(tablet-horizontal){
+        margin: 2rem;
+    }
+
     h2{
         padding: 0rem;
         font-family: "Poppins", sans-serif;
@@ -29,7 +33,7 @@ main.servicios_main{
         }
         @include ab.breakpoint(tablet-horizontal){
             font-size: 2rem;
-            padding: 1rem 2rem 1rem;
+            padding: 0;
         }
 
         @include ab.breakpoint(mobile-l){
@@ -75,7 +79,7 @@ main.servicios_main{
                 }
                 
                 @include ab.breakpoint(tablet){
-                    max-width: 120%;
+                    max-width: 150%;
                 }
 
                 @include ab.breakpoint(mobile-l){
@@ -97,17 +101,23 @@ main.servicios_main{
                 &.text_maritimo, &.text_aereo{
                     left: 14px;
                     @include ab.breakpoint(tablet-horizontal){
-                        left: 36px;
+                        left: 0;
                     }
 
                      @include ab.breakpoint(tablet){
                         left: 0;
-                        z-index: 0 46;                   
+                        z-index: 1;
+                                        
                     }
                 }
 
                 &.text_terrestre, &.text_especiales{
                     right: -95px;
+                    
+                    @include ab.breakpoint(tablet-horizontal){
+                        right: -30px;
+                    }
+                    
                     @include ab.breakpoint(tablet){
                         left: 34px;
                         top: -3px;
@@ -128,6 +138,10 @@ main.servicios_main{
                         font-size: 1.5rem;
                     }
 
+                     @include ab.breakpoint(tablet-horizontal){
+                        font-size: 1.5rem;
+                    }
+
                     @include ab.breakpoint(mobile-l){
                         text-align: center;
                     }
@@ -144,6 +158,10 @@ main.servicios_main{
                     @include ab.breakpoint(desktop){
                         font-size: 1.2rem;
                     }
+
+                     @include ab.breakpoint(tablet-horizontal){
+                        font-size: 1rem;
+                    }
                 }
             }
 
@@ -153,7 +171,7 @@ main.servicios_main{
                 picture{
                     @include ab.breakpoint(tablet){
                         position: relative;
-                        left: -34px;
+                        left: -112px;
                         z-index: 0;
                     }
 

@@ -94,6 +94,7 @@ main.nosotros_main{
     @include ab.breakpoint(tablet){
         background-image: url(../../img/pictures/nosotros/puerto_768x529.jpg);
         background-repeat: no-repeat;
+        
     }
 
     @include ab.breakpoint(mobile-l){
@@ -119,13 +120,14 @@ main.nosotros_main{
 
         @include ab.breakpoint(tablet-horizontal){
             padding: 2rem;
-           margin: 2rem;
+            margin: 2rem;
            
         }
 
         @include ab.breakpoint(tablet){
             padding: 2rem;
             grid-template-columns: 1fr;
+            background-color: transparent;
             
         }
 
@@ -228,13 +230,14 @@ main.nosotros_main{
            margin: 2rem;
             padding: 2rem;
             gap: 2rem;
+            margin: 2rem 0;
         }
 
         @include ab.breakpoint(tablet){
             display: flex;
             flex-direction: column;
-            padding: 2rem 0;
-            gap: 2rem;
+            padding: 0;
+           
         }
 
         @include ab.breakpoint(mobile-l){
@@ -378,7 +381,10 @@ main.nosotros_main{
                 
                 font-family: "Roboto", sans-serif;
                 color: ab.$gray_2;
-                font-size: 2rem; 
+                font-size: 2rem;
+                @include ab.breakpoint(tablet){
+                    font-size: 1.5rem;
+                } 
             }
 
             p{
@@ -424,6 +430,9 @@ main.nosotros_main{
                 font-family: "Roboto", sans-serif;
                 color: ab.$orange;
                 font-size: 2rem;
+                @include ab.breakpoint(tablet){
+                    font-size: 1.5rem;
+                }
                   
             }
 
