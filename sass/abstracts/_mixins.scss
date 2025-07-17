@@ -5,7 +5,13 @@
 //mixins responsive
 @mixin breakpoint($bp) {
   
-  @if $bp == mobile-m {
+  @if $bp == mobile-s {
+    @media (max-width: variables.$bp-mobile-s) {
+      @content;
+    }
+  }
+  
+  @else if $bp == mobile-m {
     @media (max-width: variables.$bp-mobile-m) {
       @content;
     }
