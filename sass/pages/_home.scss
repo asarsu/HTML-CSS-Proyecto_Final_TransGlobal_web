@@ -6,6 +6,7 @@
 @use '../themes';
 @use '../settings';
 
+
 //RESPONSIVE 1920px
 
 //header
@@ -93,7 +94,7 @@ header{
             left: 262px;
 
             @include ab.breakpoint(desktop){
-                top: 5px;
+                top: 17px;
                 left: 193px;
             }
 
@@ -130,7 +131,7 @@ header{
                 }
 
                 @include ab.breakpoint(desktop){
-                    font-size: 3rem;
+                    font-size: 2rem;
                     span{
                         font-size: 1.5rem;
                     }
@@ -261,20 +262,11 @@ header{
                         text-align: right;
                        
                         a img{
-                            max-width: 30%;
+                            max-width: 17%;
                             border-radius: 100%;
                             &:hover{
                                 border: 4px solid ab.$orange;
-                            }
-                            
-                            @include ab.breakpoint(desktop){
-                                max-width: 25%;
-                            }
-
-                            @include ab.breakpoint(tablet-horizontal){
-                                max-width: 35%;
-                            }
-
+                            }                                                                                   
                             @include ab.breakpoint(tablet){
                                 max-width: 26%;
                             }
@@ -283,9 +275,7 @@ header{
                                 max-width: 16%;
                             }
                         }
-                    } 
-
-                   
+                    }                    
                 }  
 
                
@@ -302,7 +292,7 @@ header{
              button.close_button{
                 display: block;
                 border: none;
-                background-color: white;
+                background-color: transparent;
                 color: ab.$black;
                 font-size: 2rem;
                 cursor: pointer;
@@ -569,7 +559,7 @@ main.index_main{
         background-color: ab.$gray;
         gap: 10rem;
         padding: 4rem;
-        margin: 0 14rem 4rem;
+        margin: 0 14rem;
 
         @include ab.breakpoint(desktop){
             margin: 0 7rem;
