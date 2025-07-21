@@ -299,7 +299,7 @@ main.nosotros_main{
 
             h2{
                 font-family: "Roboto", sans-serif;
-                color: ab.$gray_2;
+                color: ab.$gray;
                 font-size: 1rem;
                 @include ab.breakpoint(tablet){
                     color: ab.$orange;
