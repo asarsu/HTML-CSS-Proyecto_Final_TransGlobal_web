@@ -4,54 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Trans Global L.L.C. | Services</title>
+    <title>Trans Global S.R.L. | Services</title>
   </head>
 
   <body>
     <header>
 
-      <div class="header_container">
+     <div class="header_container">
         <picture>
-          <img src="img/logos/logo_sin_fondo_exterior.png" alt="TransGlobal Logo">
+          <img src="img/logos/logo_sin_fondo_exterior.png" alt="Logo transGlobal">
         </picture>
 
-        <nav class="menu">
+        <div class="hero_title">
+          <h1>Trans Global <span>LLC</span></h1>
+          <p>It's not a coincidence, it's service</p>
+        </div>
+
+        <button class="menu_button" id="menu_button">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="menu" id="menu">
+
+          <button class="close_button" id="close_button">
+            <i class="bi bi-x-square"></i>
+          </button>
+
           <ul>
             <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="about.html">About&nbsp;Us</a></li>
+            <li><a href="services.html">Services</a></li>            
             <li><a href="contact.html">Contact</a></li>
             <li>
               <div>
-                <a href="servicios.html" title="Spanish"><img src="img/icons/spain-flag-round-xs.png" alt=""></a>
+                <a href="servicios.html" title="Español"><img src="img/icons/spain-flag-round-xs.png" alt=""></a>
                 <a href="services.html" title="English"><img src="img/icons/united-states-of-america-flag-round-xs.png" alt=""></a>
               </div>
             </li>                        
           </ul>
         </nav>
       </div>
+  
       
     </header>
 
     <main class="servicios_main">
               
-      <h1>Our Services</h1>
+      <h2>Our Services</h2>
 
       <section class="servicios_servicios_container">
 
         <article class="servicios serv_maritimo" id="serv_maritimo">
 
           <div class="sercicios_page_text_container text_maritimo">
-            <h2>Maritime Transport</h2><br>
+            <h2>Maritim Transport</h2>
             <p>
-              We offer an extensive network of maritime services at strategic ports worldwide, guaranteeing efficient and tailored solutions for each import or export operation.
+             We offer a wide network of maritime services at strategic ports around the world, ensuring efficient and customized solutions for every import or export operation.
               <br><br>
-              Every country needs to connect its markets to global trade, and at Trans Global SRL, we meet that need with world-class services. We handle your cargo with the same care and attention as a first-class passenger, ensuring punctuality, safety, and operational excellence in every shipment.
+            Every country needs to connect its markets to global trade, and at Trans Global SRL we meet that need with world-class services. We handle your cargo with the same care and attention as a first-class passenger, ensuring punctuality, safety, and operational excellence in every shipment.
             </p><br>
-
-            
-
           </div>
           
           <picture class="maritimo_picture">
@@ -67,22 +78,21 @@
           </picture>
 
           <div class="sercicios_page_text_container text_terrestre">
-            <h2>Inland Transport</h2><br>
-            <p>We provide comprehensive land transport solutions, connecting borders and facilitating the national and international distribution of your goods. Whether by road or rail, we ensure safety, compliance, and high operational standards every step of the way.</p><br>
-            
-
+            <h2>Inland Trasportation</h2><br>
+            <p>We offer comprehensive land transport solutions, connecting borders and facilitating the national and international distribution of your goods. Whether by road or rail, we guarantee safety, compliance, and a high operational standard on every journey.</p><br>            
           </div>
         </article>
 
+          
+        
         <article class="servicios serv_aereo" id="serv_aereo">
           <div class="sercicios_page_text_container text_aereo">
-            <h2>Air Transport</h2><br>
-            <p>We streamline your operations with fast, reliable air freight services tailored to the demands of international trade. At Trans Global SRL, we partner with leading airlines and manage your air cargo with traceability, efficiency, and personalized attention to and from Bolivia.</p><br>
-            
+            <h2>Air Freight</h2><br>
+            <p>We streamline your operations with fast, reliable air transport services tailored to the demands of international trade. At Trans Global SRL, we work with reputable airlines and manage your air cargo with traceability, efficiency, and personalized attention to and from Bolivia.</p><br>            
           </div>
           <picture>
             <img src="img/pictures/servicios_page/avion_de frente_960x640px.jpg" alt="">
-          </picture>
+          </article>
         </article>
 
         <article class="servicios serv_especiales" id="serv_especiales">
@@ -93,9 +103,7 @@
 
           <div class="sercicios_page_text_container text_especiales">
             <h2>Special Projects</h2><br>
-            <p>At Trans Global, we offer the technical and operational expertise to manage the transport of oversized and specialized cargo from origin to final destination. Our services cover national and international routes, integrating logistics solutions for sectors such as oil, energy, mining, and general industry. We coordinate each stage with strategic precision, ensuring efficiency and regulatory compliance in complex environments.</p><br>
-           
-
+            <p>At Trans Global, we have the technical and operational expertise to manage the transportation of oversized and specialized cargo from the point of origin to its final destination. Our coverage includes both national and international routes, integrating logistics solutions for sectors such as oil, energy, mining, and general industry. We coordinate each stage of the process with precision and strategic focus, ensuring efficiency and regulatory compliance in complex environments.</p><br>           
           </div>
         </article>
       </section>
@@ -103,20 +111,20 @@
     </main>
 
     <footer>
-      <div class="derechos_container">
+        <div class="derechos_container">
 
         <div class="derechos">
                   
-          <picture>
-            <img src="img/logos/logo_sin_fondo_exterior.png" alt="logo32">
-          </picture>
+          
+          <img class="logo" src="img/logos/logo_sin_fondo_exterior.png" alt="logo32">
+          
           <div class="rrss">
             <a href="https://www.facebook.com/TRANSGLOBALSRL?locale=es_LA" target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/transglobalsrl_official/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
 
-          <p class="copyright">Copyright © 2025 <span>Trans Global S.R.L.</span> All rights reserved.</p>
+          <p class="copyright">Copyright © 2025 <span>Trans Global LLC</span> All Rights Reserved.</p>
           
         </div>
 
@@ -126,28 +134,32 @@
           <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="services.html">Services</a></li>            
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         
+        
         <div class="derechos_servicios">
           <h4>Services</h4>
-          <p><a href="services.html#serv_maritimo">Maritime Transport</a></p>
-          <p><a href="services.html#serv_terrestre">Inland Transport</a></p>
-          <p><a href="services.html#serv_aereo">Air Transport</a></p>
-          <p><a href="services.html#serv_especiales">Special Projects</a></p>
+          <p><a href="servicios.html#serv_maritimo">Maritim Transport</a></p>
+          <p><a href="servicios.html#serv_terrestre">Inland Transportation</a></p>
+          <p><a href="servicios.html#serv_aereo">Air Freight</a></p>
+          <p><a href="servicios.html#serv_especiales">Special Projects</a></p>
         </div>
 
         <div class="direcciones">
-          <h4>Addresses</h4>
+
+          
+          <h4>Adresses</h4>
+          
+
           <div class="direcciones_container">
             <div class="dir dir_lpz">
               <p>
                 <strong>La Paz</strong>
                 <br>
-                El Zodiaco Building 1st Floor, Office 101, Calle 9 No.455 Obrajes Zone
+                Edif. El Zodiaco Piso 1 Of. 101 Calle 9 No.455 Zona Obrajes
                 <br>
                 <strong>Tel.: </strong> <br> (591-2) 2786701 <br> (591-2) 2786881 <br> (591-2) 2787430
                 <br>
@@ -158,10 +170,10 @@
             </div>
 
             <div class="dir dir_scz">
-              <p>
+             <p>
                 <strong>Santa Cruz</strong>
                 <br>
-                Tamaki Building Ground Floor Office 1, Calle Moldes corner Cochabamba
+                Edif. Tamaki PB Of.1 Calle Moldes esq. Cochabamba
                 <br>
                 <strong>Tel.: </strong> <br> (591-3) 3372539 <br> (591-3) 3370506
                 <br>
@@ -170,10 +182,10 @@
             </div>
 
             <div class="dir dir_cbb">
-              <p>
+             <p>
                 <strong>Cochabamba</strong>
                 <br>
-                Alhambra II Building Ground Floor B, Calle Manchaypuito North Zone
+                Edif. Alhambra II PB B Calle Manchaypuito Zona Norte 
                 <br>
                 <strong>Tel.: </strong> <br> (591) 79779422
                 <br>
@@ -181,13 +193,16 @@
               </p>
             </div>
           </div>
+          
         </div>
 
       </div>
 
-      <p class="diseño">design: <span>asarsu</span></p>  
+      <P class="diseño">Design: <span>asarsu</span> <i class="bi bi-github"></i></P>   
     </footer>
 
+    
+    
     <script type="module" src="./main.js"></script>
   </body>
 </html>
