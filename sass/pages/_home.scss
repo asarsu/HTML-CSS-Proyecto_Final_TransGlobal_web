@@ -11,7 +11,7 @@
 
 //header
 header{
-   background-image: url(../../img/deco/rectangle_orange.svg);
+   background-image: url('/rectangle_orange.svg');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: -2px 125px;
@@ -865,7 +865,7 @@ main.index_main{
 
     section.call_action{
         border-top: 6px solid white;
-        background-image: url(../../img/pictures/call_action_form/camion_back_1920x509.jpg);
+        background-image: url('/camion_back_1920x509.jpg');
         background-repeat: no-repeat;
         
         @include ab.breakpoint(tablet-horizontal){
@@ -877,7 +877,7 @@ main.index_main{
         }
         
         @include ab.breakpoint(mobile-l){
-            background-image: url(../../img/pictures/call_action_form/camion_back3_425x638.jpg);
+            background-image: url('/camion_back3_425x638.jpg');
             background-repeat: no-repeat;
             background-position: 0;
         }               
@@ -1198,7 +1198,7 @@ footer{
         max-width: 100%;
         justify-items: center;
         align-items: center;
-        background-image: url(../../img/pictures/footer_pics/containers_wall_1920x1130.jpg);
+        background-image: url('/containers_wall_1920x1130.jpg');
         background-repeat: no-repeat;
 
         @include ab.breakpoint(desktop){            

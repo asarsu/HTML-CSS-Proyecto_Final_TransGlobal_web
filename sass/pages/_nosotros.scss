@@ -92,13 +92,13 @@ main.nosotros_main{
     background-color: white;
 
     @include ab.breakpoint(tablet){
-        background-image: url(../../img/pictures/nosotros/puerto_768x529.jpg);
+        background-image: url('/puerto_768x529.jpg');
         background-repeat: no-repeat;
         
     }
 
     @include ab.breakpoint(mobile-l){
-        background-image: url(../../img/pictures/nosotros/puerto_768x529.jpg);
+        background-image: url('/puerto_768x529.jpg');
         background-repeat: no-repeat;
         background-position: -488px 0;
         background-size: 238%;
@@ -245,7 +245,7 @@ main.nosotros_main{
         @include ab.breakpoint(mobile-l){
             max-width: 100%;
             padding: 2rem;
-            background-image: url(../../img/img_nosotros/hombre_de_almacen.jpg);
+            background-image: url('/hombre_de_almacen.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -591,7 +591,7 @@ main.nosotros_main{
  
     div.mensaje_final_nosotros{
         padding: 15rem;
-        background-image: url(../../img/pictures/nosotros/mujer_mision_historia1920x1277.jpg);
+        background-image: url('/mujer_mision_historia1920x1277.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 -95px;

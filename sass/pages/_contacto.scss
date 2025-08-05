@@ -7,7 +7,7 @@
 @use '../settings';
 
 main.main_contacto{
-    background-image: url(../../img/pictures/footer_pics/containers_wall_1920x1130.jpg);
+    background-image: url('/containers_wall_1920x1130.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     
@@ -47,7 +47,7 @@ main.main_contacto{
            display: flex;
            max-width: 100%;
            gap: 2rem;
-           background-image: url(../../img/pictures/footer_pics/containers_wall_1920x1130.jpg);
+           background-image: url('/containers_wall_1920x1130.jpg');
            background-repeat: no-repeat;
            background-size: cover; 
         }
@@ -60,7 +60,7 @@ main.main_contacto{
             position: relative;
             top: 0;
             flex-direction: column;
-             background-image: url(../../img/pictures/footer_pics/containers_wall_425x616.jpg);
+             background-image: url('/containers_wall_425x616.jpg');
         }
 
         p.message{
