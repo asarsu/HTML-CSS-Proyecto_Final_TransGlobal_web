@@ -2,7 +2,7 @@
 ### Proyecto Final: 
 Trans Global S.R.L. Web page:
 
-https://asarsu.github.io/HTML-CSS-Proyecto_Final_TransGlobal_web/index.htmlhttps://asarsu.github.io/HTML-CSS-GathSession/
+https://asarsu.github.io/HTML-CSS-Proyecto_Final_TransGlobal_web/
 
 Proyecto responsive creado en **HTML/CSS** usando **vite**, **sass**, **javascript**.
 
