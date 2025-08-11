@@ -207,7 +207,7 @@ main.main_contacto{
             font-weight: 300;
             font-style: italic;
             font-size: 1.25rem;
-            text-align: justify;
+            text-align: center;
 
             @include ab.breakpoint(tablet-horizontal){
                 font-size: 1rem;
@@ -220,8 +220,6 @@ main.main_contacto{
             a, strong{
                 color: ab.$orange;
             }
-
-
         }
 
         iframe{
@@ -234,6 +232,57 @@ main.main_contacto{
             @include ab.breakpoint(tablet){
                 width: 100%;
             }
+        }
+
+        details{
+            text-align: center;
+            summary{
+                list-style: none;
+                background-color: ab.$gray;
+                
+                p{
+                    font-family: "Assistant", sans-serif;
+                    font-size: 1.25rem;
+                    color: ab.$gray_2;
+                    
+                    background-color: ab.$orange;
+                    padding: 0.5rem 1rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                    margin-bottom: 0.5rem;
+                    &:hover{
+                        background-color: ab.$gray;
+                        color: ab.$orange;
+                    }
+                }
+            }
+
+            table{
+                text-align: left;
+                tr td {
+                    padding: 0.5rem;
+                    color: ab.$orange;
+                    a{
+                        color: ab.$gray;
+                        &:hover{
+                            color: ab.$orange;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    @include ab.breakpoint(mobile-l){
+                        font-size: 0.60rem;
+                        padding: 0.25rem;
+                    }
+                }
+
+                .nombre{
+                    color: ab.$gray;
+                    font-weight: 900;
+                }
+            }
+
+           
         }
     }
 }

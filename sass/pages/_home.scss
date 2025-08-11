@@ -1606,12 +1606,23 @@ footer{
         color: #666666;
         text-align: center;
         padding: 0.5rem;
-        span{
-            background: linear-gradient(65deg,rgba(246, 128, 25, 1) 0%, rgba(242, 242, 242, 0.78) 72%);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
+        a{
+            text-decoration: none;
+            span{
+                background: linear-gradient(65deg,rgba(246, 128, 25, 1) 0%, rgba(242, 242, 242, 0.78) 72%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: 700;
+            }
+            i{
+                color: ab.$gray;
+                
+            }
             
+            &:hover{
+                text-decoration: none;
+                cursor: pointer;
+            }
         }
     }
      
