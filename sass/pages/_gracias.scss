@@ -1,0 +1,51 @@
+@use '../abstracts' as ab;
+@forward '../vendors/vendors';
+@use '../base';
+@use '../components' as comps;
+@use '../layout';
+@use '../themes';
+@use '../settings';
+
+
+body.body-gracias {
+    background-color: ab.$gray_2;
+    padding: 2rem;
+    div.container{
+        text-align: center;
+        padding-top: 10rem;
+        max-width: 100%;
+        h1{
+            font-family: "Poppins", sans-serif;
+            font-size: 3rem;
+            color: ab.$orange;
+            margin-bottom: 2rem;
+        }
+
+        img{
+            max-width: 80%;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            font-family: "Assistant", sans-serif;
+            font-size: 1.5rem;
+            color: ab.$gray;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        a{
+            
+            background-color: ab.$orange;
+            padding: 1rem 4rem;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            color: ab.$gray_2;
+            font-size: 1rem;
+            font-weight: 600;
+            &:hover{
+                color: ab.$gray;            
+            }
+        }
+    }
+}

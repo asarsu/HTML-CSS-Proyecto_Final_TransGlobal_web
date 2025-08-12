@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Trans Globlal S.R.L | Contacto</title>
-    <script type="module" crossorigin src="/HTML-CSS-Proyecto_Final_TransGlobal_web/assets/main-W7uje3O1.js"></script>
-    <link rel="stylesheet" crossorigin href="/HTML-CSS-Proyecto_Final_TransGlobal_web/assets/main-7xnn_HTD.css">
+    <script type="module" crossorigin src="/HTML-CSS-Proyecto_Final_TransGlobal_web/assets/main-DsEligEJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/HTML-CSS-Proyecto_Final_TransGlobal_web/assets/main-B1JQeHI8.css">
   </head>
 
   <body>
@@ -53,35 +53,39 @@
 
         <p class="message">En <strong>Trans Gloglal S.R.L</strong> sabemos que la comunicación es escencial para la adecuada gestion logística con todos nuestros clientes y socios comerciales, es por eso que ponemos a tu disposición una forma rápida para ponerte en contacto con nuestro equipo.</p>
 
-        <form action="#" method="get">
+         <form action="https://formsubmit.co/asarmientosuarez@gmail.com" method="POST">
+  
+          <!-- Configuraciones ocultas -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://asarsu.github.io/HTML-CSS-Proyecto_Final_TransGlobal_web/gracias.html">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario web">
+          
           <div>
             <p>Email</p>
-            <input type="email" name="email" id="email" placeholder="email&#64;example.com">
+            <input type="email" name="email" placeholder="email@example.com" required>
           </div>
           
           <div>
             <p>Nombre y Apellido</p>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido">
+            <input type="text" name="nombre" placeholder="Nombre Apellido" required>
           </div>
 
           <div>
-            <p>Teléono</p>
-            <input type="tel" name="telefono" id="telefono" placeholder="+000 999-999-99">
+            <p>Teléfono</p>
+            <input type="tel" name="telefono" placeholder="+000 999-999-99">
           </div>
 
           <div>
             <p>País</p>
-            <input type="text" name="pais" id="pais">
+            <input type="text" name="pais">
           </div>
           
           <div>
             <p>Mensaje</p>
-            <textarea name="mensaje" id="mensaje" rows="6" cols="50"></textarea>
+            <textarea name="mensaje" rows="6" cols="50" required></textarea>
           </div>
 
-          <button>Enviar</button>
-          
-
+          <button type="submit">Enviar</button>
         </form>
         
       </div>
