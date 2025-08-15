@@ -1253,31 +1253,18 @@ footer{
             } 
         }
 
-        form{
+         form{
             background-color:#4D4D4D;
             padding: 1rem;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.86);
             opacity: 0.8;
-            max-width: 71%;
 
-            @include ab.breakpoint(tablet-horizontal){
-               
-                max-width: 100%;
-                display: grid;
-                flex-wrap: wrap;
-                gap: 0.5rem;
-                justify-content: center;
 
+            @include ab.breakpoint(tablet){              
+                                                
                 #mensaje{
-                    height: 70%;
-                }               
-            }
-
-            @include ab.breakpoint(tablet){
-                gap: 0.5rem;
-                padding: 1rem;
-               
-                
+                    width: 100%;
+                }
             }
 
             @include ab.breakpoint(mobile-l){
@@ -1308,13 +1295,6 @@ footer{
                     padding: 2px;
                     border: none;
                     margin-bottom: 1rem;
-
-                }
-
-                textarea{
-                    @include ab.breakpoint(mobile-l){
-                        width: 100px;
-                    }
                 }
             }
 
@@ -1336,13 +1316,7 @@ footer{
 
                 @include ab.breakpoint(tablet-horizontal){
                     padding: 8px 32px;
-                    position: relative;
-                    top: -22px;
-                }
-
-                @include ab.breakpoint(mobile-l){
-                    top: -11px;
-                }
+                }                
             }
            
            
