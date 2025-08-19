@@ -42,33 +42,40 @@
       <div class="hero_footer">
         <p class="message">At <strong>Trans Global LLC</strong> we understand that communication is essential for effective logistics management with all our clients and business partners. That’s why we provide you with a quick way to reach our team.</p>
 
-        <form action="#" method="get">
+         <!-- cambiar la direccion de correo electronico -->  
+        <form action="https://formsubmit.co/asarmientosuarez@gmail.com" method="POST">           
+          
+          <!-- Configuraciones ocultas -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://asarsu.github.io/HTML-CSS-Proyecto_Final_TransGlobal_web/tanks.html">  <!--cambiar el value a la url donde estará alojada la web de TG-->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario web">
+          
           <div>
             <p>Email</p>
-            <input type="email" name="email" id="email" placeholder="email&#64;example.com">
+            <input type="email" name="email" placeholder="email@example.com" required>
           </div>
-
+          
           <div>
-            <p>Full Name</p>
-            <input type="text" name="nombre" id="nombre" placeholder="First Last">
+            <p>Name</p>
+            <input type="text" name="nombre" placeholder="Nombre Apellido" required>
           </div>
 
           <div>
             <p>Phone</p>
-            <input type="tel" name="telefono" id="telefono" placeholder="+000 999-999-99">
+            <input type="tel" name="telefono" placeholder="+000 999-999-99">
           </div>
 
           <div>
             <p>Country</p>
-            <input type="text" name="pais" id="pais">
+            <input type="text" name="pais">
           </div>
-
+          
           <div>
-            <p>Message</p>
-            <textarea name="mensaje" id="mensaje" rows="6" cols="50"></textarea>
+            <p>Menssage</p>
+            <textarea name="mensaje" rows="6" cols="50" required></textarea>
           </div>
 
-          <button>Send</button>
+          <button type="submit">Send</button>
         </form>
       </div>
 
