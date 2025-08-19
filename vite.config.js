@@ -19,7 +19,7 @@ export default defineConfig({
         services: resolve(__dirname, 'services.html'),
         contact: resolve(__dirname, 'contact.html'),
         gracias: resolve(__dirname, 'gracias.html'),
-        gracias: resolve(__dirname, 'thanks.html'),
+        thanks: resolve(__dirname, 'thanks.html'),
       },
     }
   
