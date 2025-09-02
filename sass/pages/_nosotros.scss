@@ -575,6 +575,12 @@ main.nosotros_main{
                 position: relative;
                 top: 92px;
 
+                @include ab.breakpoint(desktop-m){
+                    max-width: 90%;
+                    top: 92px;
+                    left: 51px;
+                }
+                
                 @include ab.breakpoint(tablet-horizontal){
                     max-width: 90%;
                     top: 0;
