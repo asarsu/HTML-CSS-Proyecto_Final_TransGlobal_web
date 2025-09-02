@@ -21,6 +21,10 @@ header{
    background-color: ab.$gray;
    margin-bottom: 10px;
    
+    @include ab.breakpoint(desktop-m){        
+        background-position: 0px 108px;        
+    }
+   
    @include ab.breakpoint(desktop){        
         background-position: 0px 103px;        
     }
@@ -42,10 +46,15 @@ header{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        gap: 800px;
+        gap: 50rem;
         border-bottom: 0.5rem solid ab.$gray_2;
-       
-                      
+                       
+        @include ab.breakpoint(desktop-m){
+            padding: 16px 32px;
+            gap: 32rem;
+        }
+        
+        
         @include ab.breakpoint(desktop){
             padding: 16px 32px;
             gap: 40rem;
@@ -70,7 +79,7 @@ header{
         picture{
             max-width: 10%;
             flex: 1;
-
+     
             @include ab.breakpoint(tablet-horizontal){
                 max-width: 14%;
             }

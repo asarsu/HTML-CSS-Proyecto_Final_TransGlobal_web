@@ -47,6 +47,12 @@
     }
   }
 
+  @else if $bp == desktop-m {
+    @media (max-width: variables.$bp-desktop-m) {
+      @content;
+    }
+  }
+
   @else if $bp == desktop-l {
     @media (max-width: variables.$bp-desktop-l) {
       @content;
